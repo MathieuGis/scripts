@@ -19,7 +19,7 @@ else
   write-host "=> LOGDIR CREATED <="
   write-host $lines}
 
-echo "               Total    Copied   Skipped  Mismatch    FAILED    Extras" > $logdir\faileddoc.txt
+Write-Host "               Total    Copied   Skipped  Mismatch    FAILED    Extras" > $logdir\faileddoc.txt
 
 if (test-path $Destination\*)
 {write-host $lines
@@ -42,7 +42,7 @@ else
         $target = [math]::round((Get-ChildItem "$Path\$object" -recurse | Measure-Object -property length -sum).Sum / 1GB, 2)
         Write-Host "moving $Path\$object with size: $target GB"
         Robocopy "$Path\$object" "$Destination\$object" /e /z /v /r:5 /w:5 > "$logdir\$logname"
-        echo $($object).name >> "$logdir\faileddoc.txt"
+        Write-Host $($object).name >> "$logdir\faileddoc.txt"
         Get-Content "$logdir\$logname" | Select-String -Pattern ("files :    ") >> "$logdir\faileddoc.txt"
         Remove-Item "$logdir\$logname"
 
@@ -58,7 +58,7 @@ else
     }
     else
     {
-        echo "$Path\$object" >> "$logdir\files.txt"
+        Add-Content -Path "$logdir\files.txt" -Value "$Path\$object"
     }
 }
 
@@ -74,13 +74,13 @@ if (Test-Path "$logdir\files.txt")
         $filesize = [math]::round((Get-Item $file).length / 1GB, 2)
         Write-Host "moving $file ($filesize GB)"
         xcopy "$file" "$Destination" >> "$logdir\toremove.txt" /Y
-        Remove-Item "$logdir\toremove.txt"
+        Remove-Item "$logdir\toremove.txt" -ErrorAction SilentlyContinue
     }
-    Remove-Item "$logdir\files.txt"
+    Remove-Item "$logdir\files.txt" -ErrorAction SilentlyContinue
 }
 
 $dessize = (Get-ChildItem "$Destination" -recurse | Measure-Object -property length -sum).Sum / 1GB
-$procent = 100 / ($sourcesize / $dessize)
+$procent = if ($dessize -ne 0) { 100 / ($sourcesize / $dessize) } else { 0 }
 $totalafg = [math]::Round($procent, 2)
 $destafg = [math]::Round($dessize, 2)
 $sourceafg = [math]::Round($sourcesize, 2)
