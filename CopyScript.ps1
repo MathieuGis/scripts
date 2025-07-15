@@ -62,41 +62,48 @@ else
     }
 }
 
-if (test-path $logdir\files.txt)
-{write-host ""
- write-host $lines
- Write-Host "=> MOVING LOOSE FILES <="
- write-host $lines
- write-host "" 
- 
-foreach ($file in (cat $logdir\files.txt))
-{$filesize = [math]::round((Get-Item $file).length /1GB,2)
- write-host "moving $file ($filesize GB)"
- xcopy "$file" $destination >> $logdir\toremove.txt /Y
- del $logdir\toremove.txt}
- del $logdir\files.txt}
+if (Test-Path "$logdir\files.txt")
+{
+    Write-Host ""
+    Write-Host $lines
+    Write-Host "=> MOVING LOOSE FILES <="
+    Write-Host $lines
+    Write-Host ""
+    foreach ($file in (Get-Content "$logdir\files.txt"))
+    {
+        $filesize = [math]::round((Get-Item $file).length / 1GB, 2)
+        Write-Host "moving $file ($filesize GB)"
+        xcopy "$file" "$Destination" >> "$logdir\toremove.txt" /Y
+        Remove-Item "$logdir\toremove.txt"
+    }
+    Remove-Item "$logdir\files.txt"
+}
 
-$dessize = $(Get-ChildItem $destination -recurse | Measure-Object -property length -sum).Sum /1GB
-$procent = 100/($sourcesize/$dessize)
-$totalafg = [math]::Round($procent,2)
-$destafg = [math]::Round($dessize,2)
-$sourceafg = [math]::round($sourcesize,2) 
+$dessize = (Get-ChildItem "$Destination" -recurse | Measure-Object -property length -sum).Sum / 1GB
+$procent = 100 / ($sourcesize / $dessize)
+$totalafg = [math]::Round($procent, 2)
+$destafg = [math]::Round($dessize, 2)
+$sourceafg = [math]::Round($sourcesize, 2)
 
-(gc $logdir\faileddoc.txt) | ? {$_.trim() -ne "" } | set-content $logdir\faileddoc.txt
+(Get-Content "$logdir\faileddoc.txt") | Where-Object { $_.Trim() -ne "" } | Set-Content "$logdir\faileddoc.txt"
 
-write-host ""
-write-host $lines
-write-host "copied $destafg GB of $sourceafg GB"
-write-host ""
+Write-Host ""
+Write-Host $lines
+Write-Host "copied $destafg GB of $sourceafg GB"
+Write-Host ""
 $endDTM = (Get-Date)
 
-"Time taken: $([math]::round(($endDTM-$startDTM).totalminutes,2)) minutes"
-write-host ""
+Write-Host "Time taken: $([math]::round(($endDTM-$startDTM).TotalMinutes,2)) minutes"
+Write-Host ""
 
 if ($destafg -eq $sourceafg)
-{write-host "=> EVERYTHING COPIED! <="
- write-host $lines}
+{
+    Write-Host "=> EVERYTHING COPIED! <="
+    Write-Host $lines
+}
 else
-{write-host "=> SOMETHING LOOKS WRONG? <="
- write-host $lines}
- Write-Host "" }
+{
+    Write-Host "=> SOMETHING LOOKS WRONG? <="
+    Write-Host $lines
+}
+Write-Host ""
