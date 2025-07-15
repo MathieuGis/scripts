@@ -39,18 +39,19 @@ Write-Host "$($cyanLine.Substring(0, 19)) Local Users $($cyanLine.Substring(0, 1
 $apps = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*, HKLM:\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
     Where-Object { $_.DisplayName -and $_.DisplayName -ne "" -and ($_.DisplayName -notmatch "visual c\+\+") }
 
-Write-Host "`n$($cyanLine.Substring(0, 19)) Applications (Name | Version | Publisher) $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+Write-Host "`n$($cyanLine.Substring(0, 19)) Applications (Name | Version | Publisher | Size) $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 if ($apps) {
-    $apps | Sort-Object DisplayName | ForEach-Object {
+    $apps | Sort-Object {[int]($_.EstimatedSize -as [int])} -Descending | ForEach-Object {
         $name = $_.DisplayName.PadRight(40)
         $version = ($_.DisplayVersion -as [string]).PadRight(15)
         $publisher = ($_.Publisher -as [string])
-        Write-Host "$name $version $publisher"
+        $sizeMB = if ($_.EstimatedSize) { "{0:N2}" -f ($_.EstimatedSize / 1KB) } else { "N/A" }
+        Write-Host "$name $version $publisher $sizeMB MB"
     }
 } else {
     Write-Host "No user-installed applications found."
 }
-Write-Host "$($cyanLine.Substring(0, 19)) Applications (Name | Version | Publisher) $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+Write-Host "$($cyanLine.Substring(0, 19)) Applications (Name | Version | Publisher | Size) $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 
 # List all active network interfaces
 Write-Host "`n$($cyanLine.Substring(0, 19)) Active Network Interfaces $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
