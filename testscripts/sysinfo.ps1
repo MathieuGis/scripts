@@ -37,7 +37,7 @@ Write-Host ("RAM (GB):".PadRight(20) + "{0:N2}" -f ($cs.TotalPhysicalMemory / 1G
 Write-Host ("GPU:".PadRight(20) + "$(Get-CimInstance Win32_VideoController | Select-Object -ExpandProperty Name -First 1)")
 Write-Host "$($cyanLine.Substring(0, 19)) Hardware Information $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 
-# Network Interfaces (moved up)
+# Network Interfaces
 Write-Host "`n$($cyanLine.Substring(0, 19)) Active Network Interfaces $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 Write-Host ("Name".PadRight(30) + "Description".PadRight(40) + "MAC Address") -ForegroundColor White
 Write-Host ("-"*30 + "-"*40 + "-"*17)
