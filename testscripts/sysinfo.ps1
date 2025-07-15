@@ -40,7 +40,7 @@ function Wait-ReturnMenu {
 }
 
 function Show-SectionHeader($title) {
-    Write-Host "\n$($cyanLine.Substring(0, 19)) $title $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+    Write-Host ("$($cyanLine.Substring(0, 19)) $title $($cyanLine.Substring(0, 19))") -ForegroundColor Cyan
 }
 
 function Show-SystemInfo {
@@ -55,6 +55,7 @@ function Show-SystemInfo {
     Write-Host ("BIOS Version:".PadRight(20) + "$($bios.SMBIOSBIOSVersion)")
     Write-Host ("Serial Number:".PadRight(20) + "$($bios.SerialNumber)")
     Show-SectionHeader 'System Information'
+    Write-Host ""
 }
 
 function Show-HardwareInfo {
@@ -65,6 +66,7 @@ function Show-HardwareInfo {
     Write-Host ("RAM (GB):".PadRight(20) + "{0:N2}" -f ($cs.TotalPhysicalMemory / 1GB))
     Write-Host ("GPU:".PadRight(20) + "$(Get-CimInstance Win32_VideoController | Select-Object -ExpandProperty Name -First 1)")
     Show-SectionHeader 'Hardware Information'
+    Write-Host ""
 }
 
 function Show-NetworkInfo {
@@ -88,6 +90,7 @@ function Show-NetworkInfo {
         }
     }
     Show-SectionHeader 'Active Network Interfaces'
+    Write-Host ""
 }
 
 function Show-Processes {
@@ -129,6 +132,7 @@ function Show-Processes {
         Write-Host "$procName$procCount$cpu$ram"
     }
     Show-SectionHeader 'Top 10 Resource Hungry Processes'
+    Write-Host ""
 }
 
 function Show-UserFolders {
@@ -156,6 +160,7 @@ function Show-UserFolders {
         Write-Host "No user folders found." -ForegroundColor Red
     }
     Show-SectionHeader 'Top 10 Largest Folders in User Profiles'
+    Write-Host ""
 }
 
 function Show-DiskSpace {
@@ -176,8 +181,8 @@ function Show-DiskSpace {
         Write-Host (" $usedPercent% used ($used GB / $total GB)")
     }
     Show-SectionHeader 'Disk Space Report'
-    $total = ($drives | Measure-Object -Property TotalGB -Sum).Sum
     Write-Host ("Total Disk Space (GB): ".PadRight(30) + "$total") -ForegroundColor Green
+    Write-Host ""
 }
 
 function Show-LocalUsers {
@@ -191,6 +196,7 @@ function Show-LocalUsers {
         Write-Host "$name $enabled $lastLogon"
     }
     Show-SectionHeader 'Local Users'
+    Write-Host ""
 }
 
 function Show-Applications {
@@ -211,6 +217,7 @@ function Show-Applications {
         Write-Host "No user-installed applications found."
     }
     Show-SectionHeader 'Applications (Name | Version | Publisher | Size)'
+    Write-Host ""
 }
 
 function Show-USBDevices {
@@ -229,6 +236,7 @@ function Show-USBDevices {
         Write-Host "No USB devices found." -ForegroundColor Red
     }
     Show-SectionHeader 'Connected USB Devices'
+    Write-Host ""
 }
 
 # Main loop
@@ -283,7 +291,7 @@ while ($true) {
         }
         '10' {
             Clear-Host
-            Write-Host "\n$($cyanLine.Substring(0, 19)) FULL SYSTEM REPORT $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+            Write-Host ("$($cyanLine.Substring(0, 19)) FULL SYSTEM REPORT $($cyanLine.Substring(0, 19))") -ForegroundColor Cyan
             Show-SystemInfo
             Show-HardwareInfo
             Show-NetworkInfo
