@@ -174,3 +174,4 @@ Get-PnpDevice | Where-Object { $_.Status -eq 'OK' -and $_.InstanceId -like 'USB*
     Write-Host "$id $desc"
 }
 Write-Host "$($cyanLine.Substring(0, 19)) Connected USB Devices $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+Pause
