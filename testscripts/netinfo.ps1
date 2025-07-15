@@ -41,16 +41,16 @@ $arpTable = arp -a
 
 # Gather info in parallel (PowerShell 7+)
 function Get-HostInfo {
-    param($host, $arpTable)
-    $info = [ordered]@{ Host = $host }
+    param($hosts, $arpTable)
+    $info = [ordered]@{ Host = $hosts }
 
     try {
-        $dns = [System.Net.Dns]::GetHostEntry($host)
+        $dns = [System.Net.Dns]::GetHostEntry($hosts)
         $info.Hostname = $dns.HostName
     } catch { $info.Hostname = "(not found)" }
 
     try {
-        $arp = $arpTable | Select-String $host
+        $arp = $arpTable | Select-String $hosts
         if ($arp) {
             $mac = ($arp -split '\s+')[-2]
             $info.MAC = $mac
@@ -73,15 +73,15 @@ function Get-HostInfo {
 
 if ($PSVersionTable.PSVersion.Major -ge 7) {
     $results = $aliveHosts | ForEach-Object -Parallel {
-        param($host, $arpTable)
-        function Get-HostInfo { param($host, $arpTable)
-            $info = [ordered]@{ Host = $host }
+        param($hosts, $arpTable)
+        function Get-HostInfo { param($hosts, $arpTable)
+            $info = [ordered]@{ Host = $hosts }
             try {
-                $dns = [System.Net.Dns]::GetHostEntry($host)
+                $dns = [System.Net.Dns]::GetHostEntry($hosts)
                 $info.Hostname = $dns.HostName
             } catch { $info.Hostname = "(not found)" }
             try {
-                $arp = $arpTable | Select-String $host
+                $arp = $arpTable | Select-String $hosts
                 if ($arp) {
                     $mac = ($arp -split '\s+')[-2]
                     $info.MAC = $mac
@@ -90,7 +90,7 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
                 }
             } catch { $info.MAC = "(not found)" }
             try {
-                $os = (Invoke-Command -ComputerName $host -ScriptBlock { (Get-WmiObject Win32_OperatingSystem).Caption } -ErrorAction SilentlyContinue)
+                $os = (Invoke-Command -ComputerName $hosts -ScriptBlock { (Get-WmiObject Win32_OperatingSystem).Caption } -ErrorAction SilentlyContinue)
                 if ($os) {
                     $info.OS = $os
                 } else {
@@ -99,11 +99,11 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
             } catch { $info.OS = "(not found or access denied)" }
             return $info
         }
-        Get-HostInfo $host $using:arpTable
+        Get-HostInfo $hosts $using:arpTable
     } -ArgumentList $arpTable -ThrottleLimit 20
 } else {
-    $results = foreach ($host in $aliveHosts) {
-        Get-HostInfo $host $arpTable
+    $results = foreach ($hosts in $aliveHosts) {
+        Get-HostInfo $hosts $arpTable
     }
 }
 
