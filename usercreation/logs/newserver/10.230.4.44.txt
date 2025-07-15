@@ -1,0 +1,118 @@
+
+davy
+Adding user `davy' to group `sudo' ...
+Adding user davy to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+lieven
+Adding user `lieven' to group `sudo' ...
+Adding user lieven to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+peterv
+Adding user `peterv' to group `sudo' ...
+Adding user peterv to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+brecht
+Adding user `brecht' to group `sudo' ...
+Adding user brecht to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+frederic
+Adding user `frederic' to group `sudo' ...
+Adding user frederic to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+mathieu
+Adding user `mathieu' to group `sudo' ...
+Adding user mathieu to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+martin
+Adding user `martin' to group `sudo' ...
+Adding user martin to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+nico
+Adding user `nico' to group `sudo' ...
+Adding user nico to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+jeroen
+Adding user `jeroen' to group `sudo' ...
+Adding user jeroen to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+SungardDRProject
+Adding user `SungardDRProject' to group `sudo' ...
+Adding user SungardDRProject to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+lorenzov
+Adding user `lorenzov' to group `sudo' ...
+Adding user lorenzov to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+stevenl
+Adding user `stevenl' to group `sudo' ...
+Adding user stevenl to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
+mathieutest
+Adding user `mathieutest' to group `sudo' ...
+Adding user mathieutest to group sudo
+Done.
+the account is setup
+done
+
+========================================================================================
+
