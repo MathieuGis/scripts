@@ -34,32 +34,32 @@ else
  Write-Host ""
 
  ForEach ($object in (Get-ChildItem "$Path"))
+{
+    $logname = "$($object)_log.txt"
 
-{   #$counter = $(dir "$Path\$object" | measure).count
-    $logname = "$($object)_log.txt"   
+    if ((Get-Item "$Path\$object").PSIsContainer)
+    {
+        $target = [math]::round((Get-ChildItem "$Path\$object" -recurse | Measure-Object -property length -sum).Sum / 1GB, 2)
+        Write-Host "moving $Path\$object with size: $target GB"
+        Robocopy "$Path\$object" "$Destination\$object" /e /z /v /r:5 /w:5 > "$logdir\$logname"
+        echo $($object).name >> "$logdir\faileddoc.txt"
+        Get-Content "$logdir\$logname" | Select-String -Pattern ("files :    ") >> "$logdir\faileddoc.txt"
+        Remove-Item "$logdir\$logname"
 
-    if ((get-item "$path\$object").PSIsContainer)
-    {$target = [math]::round($(Get-ChildItem "$path\$object" -recurse | Measure-Object -property length -sum).Sum /1GB,2)
-     write-host moving $path\$object with size: $target GB  
-     #echo "$object ($counter files)" >> $logdir\doclog.txt
-     Robocopy "$Path\$object" $Destination\$object /e /z /v /r:5 /w:5 > $logdir\$logname         #with empty folders
-     echo $($object).name >> $logdir\faileddoc.txt
-     Get-Content $logdir\$logname | Select-String -Pattern ("files :    ") >> $logdir\faileddoc.txt
-     remove-item $logdir\$logname
-   
-     $dessize = $(Get-ChildItem $destination -recurse | Measure-Object -property length -sum).Sum /1GB
-     $procent = 100/($sourcesize/$dessize)
-     $totalafg = [math]::Round($procent,2)
-     $destafg = [math]::Round($dessize,2)
-     $sourceafg = [math]::round($sourcesize,2)
-    
-     write-host date
-     Write-Host "Moved $totalafg % ($destafg GB /$sourceafg GB )"
-     write-host ""
-    # Start-Sleep -s 1 
-     }
-     else
-     {echo "$path\$object" >> $logdir\files.txt}
+        $dessize = (Get-ChildItem "$Destination" -recurse | Measure-Object -property length -sum).Sum / 1GB
+        $procent = 100 / ($sourcesize / $dessize)
+        $totalafg = [math]::Round($procent, 2)
+        $destafg = [math]::Round($dessize, 2)
+        $sourceafg = [math]::Round($sourcesize, 2)
+
+        Write-Host (Get-Date)
+        Write-Host "Moved $totalafg % ($destafg GB / $sourceafg GB )"
+        Write-Host ""
+    }
+    else
+    {
+        echo "$Path\$object" >> "$logdir\files.txt"
+    }
 }
 
 if (test-path $logdir\files.txt)
