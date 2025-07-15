@@ -111,6 +111,31 @@ foreach ($p in $topProcs) {
 }
 Write-Host "$($cyanLine.Substring(0, 19)) Top 10 Resource Hungry Processes $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 
+# Top 10 Largest Folders in User Folders for All Users
+Write-Host "`n$($cyanLine.Substring(0, 19)) Top 10 Largest Folders in User Profiles $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+Write-Host ("User".PadRight(25) + "Folder".PadRight(60) + "Size (GB)") -ForegroundColor White
+Write-Host ("-"*25 + "-"*60 + "-"*10) -ForegroundColor DarkGray
+$usersPath = Join-Path $env:SystemDrive 'Users'
+$allFolders = @()
+if (Test-Path $usersPath) {
+    Get-ChildItem -Path $usersPath -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+        $user = $_.Name
+        $userFolders = Get-ChildItem -Path $_.FullName -Directory -ErrorAction SilentlyContinue
+        foreach ($folder in $userFolders) {
+            $size = (Get-ChildItem -Path $folder.FullName -Recurse -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum
+            $sizeGB = if ($size) { [math]::Round($size/1GB,2) } else { 0 }
+            $allFolders += [PSCustomObject]@{ User=$user; Folder=$folder.FullName; SizeGB=$sizeGB }
+        }
+    }
+    $topFolders = $allFolders | Sort-Object -Property SizeGB -Descending | Select-Object -First 10
+    foreach ($f in $topFolders) {
+        Write-Host ($f.User.PadRight(25) + $f.Folder.PadRight(60) + ("{0:N2}" -f $f.SizeGB)) -ForegroundColor Yellow
+    }
+} else {
+    Write-Host "No user folders found." -ForegroundColor Red
+}
+Write-Host "$($cyanLine.Substring(0, 19)) Top 10 Largest Folders in User Profiles $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+
 # Get drive info with numeric values for calculations
 $drives = Get-PSDrive -PSProvider 'FileSystem' | Select-Object Name, @{Name="FreeGB";Expression={ [math]::Round($_.Free/1GB,2) }}, @{Name="TotalGB";Expression={ [math]::Round(($_.Used + $_.Free)/1GB,2) }}
 
