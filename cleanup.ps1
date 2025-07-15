@@ -10,6 +10,6 @@ dism.exe /Online /Cleanup-Image /StartComponentCleanup /ResetBase
 
 # Optionally, scan and repair system image (uncomment if needed)
 dism.exe /Online /Cleanup-Image /ScanHealth
-ism.exe /Online /Cleanup-Image /RestoreHealth
+dism.exe /Online /Cleanup-Image /RestoreHealth
 
 Write-Host "DISM cleanup completed." -ForegroundColor Green
