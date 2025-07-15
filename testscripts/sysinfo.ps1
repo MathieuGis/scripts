@@ -37,6 +37,29 @@ Write-Host ("RAM (GB):".PadRight(20) + "{0:N2}" -f ($cs.TotalPhysicalMemory / 1G
 Write-Host ("GPU:".PadRight(20) + "$(Get-CimInstance Win32_VideoController | Select-Object -ExpandProperty Name -First 1)")
 Write-Host "$($cyanLine.Substring(0, 19)) Hardware Information $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 
+# Network Interfaces (moved up)
+Write-Host "`n$($cyanLine.Substring(0, 19)) Active Network Interfaces $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+Write-Host ("Name".PadRight(30) + "Description".PadRight(40) + "MAC Address") -ForegroundColor White
+Write-Host ("-"*30 + "-"*40 + "-"*17)
+Get-NetAdapter | Where-Object { $_.Status -eq 'Up' } | ForEach-Object {
+    $name = $_.Name.PadRight(30)
+    $desc = $_.InterfaceDescription.PadRight(40)
+    $mac = $_.MacAddress
+    Write-Host "$name $desc $mac"
+    $ifIndex = $_.ifIndex
+    $ipAddresses = Get-NetIPAddress -InterfaceIndex $ifIndex | Where-Object { $_.AddressState -eq 'Preferred' }
+    foreach ($ip in $ipAddresses) {
+        $type = if ($ip.AddressFamily -eq 'IPv4') { "IPv4" } else { "IPv6" }
+        Write-Host ("    $type Address : " + $ip.IPAddress)
+    }
+    # Default Gateway
+    $gateway = Get-NetRoute -InterfaceIndex $ifIndex -DestinationPrefix '0.0.0.0/0' -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty NextHop
+    if ($gateway) {
+        Write-Host ("    Default Gateway : " + $gateway)
+    }
+}
+Write-Host "$($cyanLine.Substring(0, 19)) Active Network Interfaces $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+
 # Top 10 Resource Hungry Processes (Average CPU over 5 seconds, grouped by process name)
 Write-Host "`n$($cyanLine.Substring(0, 19)) Top 10 Resource Hungry Processes $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 Write-Host ("Name".PadRight(30) + "Count".PadRight(8) + "CPU (%)".PadRight(10) + "RAM (MB)") -ForegroundColor White
@@ -146,32 +169,21 @@ if ($apps) {
 }
 Write-Host "$($cyanLine.Substring(0, 19)) Applications (Name | Version | Publisher | Size) $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 
-# Network Interfaces
-Write-Host "`n$($cyanLine.Substring(0, 19)) Active Network Interfaces $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
-Write-Host ("Name".PadRight(30) + "Description".PadRight(40) + "MAC Address") -ForegroundColor White
-Write-Host ("-"*30 + "-"*40 + "-"*17)
-Get-NetAdapter | Where-Object { $_.Status -eq 'Up' } | ForEach-Object {
-    $name = $_.Name.PadRight(30)
-    $desc = $_.InterfaceDescription.PadRight(40)
-    $mac = $_.MacAddress
-    Write-Host "$name $desc $mac"
-    $ifIndex = $_.ifIndex
-    $ipAddresses = Get-NetIPAddress -InterfaceIndex $ifIndex | Where-Object { $_.AddressState -eq 'Preferred' }
-    foreach ($ip in $ipAddresses) {
-        $type = if ($ip.AddressFamily -eq 'IPv4') { "IPv4" } else { "IPv6" }
-        Write-Host ("    $type Address : " + $ip.IPAddress)
-    }
-}
-Write-Host "$($cyanLine.Substring(0, 19)) Active Network Interfaces $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
-
 # Connected Devices (USB Only)
 Write-Host "`n$($cyanLine.Substring(0, 19)) Connected USB Devices $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
 Write-Host ("DeviceID".PadRight(25) + "Description") -ForegroundColor White
-Write-Host ("-"*25 + "-"*40)
-Get-PnpDevice | Where-Object { $_.Status -eq 'OK' -and $_.InstanceId -like 'USB*' } | ForEach-Object {
-    $id = $_.DeviceID.PadRight(25)
-    $desc = $_.FriendlyName
-    Write-Host "$id $desc"
+Write-Host ("-"*25 + "-"*40) -ForegroundColor DarkGray
+$usbDevices = Get-PnpDevice | Where-Object { $_.Status -eq 'OK' -and $_.InstanceId -like 'USB*' }
+if ($usbDevices) {
+    foreach ($dev in $usbDevices) {
+        $id = $dev.DeviceID.PadRight(25)
+        $desc = $dev.FriendlyName
+        Write-Host $id -NoNewline -ForegroundColor Yellow
+        Write-Host $desc -ForegroundColor Green
+    }
+} else {
+    Write-Host "No USB devices found." -ForegroundColor Red
 }
 Write-Host "$($cyanLine.Substring(0, 19)) Connected USB Devices $($cyanLine.Substring(0, 19))" -ForegroundColor Cyan
+Write-Host "" -ForegroundColor DarkGray
 Pause
