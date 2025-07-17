@@ -1,14 +1,5 @@
 # Visually enhanced fun.ps1
 
-# ASCII Art Banner
-Write-Host @"
-   _____       _        
-  |  ___|_   _| | _____ 
-  | |_  | | | | |/ / _ \
-  |  _| | |_| |   <  __/
-  |_|    \__,_|_|\_\___|
-"@ -ForegroundColor Cyan
-
 Write-Host ("="*60) -ForegroundColor DarkCyan
 Write-Host ("SYSTEM INFORMATION REPORT".PadLeft(40)) -ForegroundColor White
 Write-Host ("="*60) -ForegroundColor DarkCyan
