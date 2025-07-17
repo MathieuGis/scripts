@@ -202,7 +202,7 @@ function Show-LocalUsers {
 function Show-Applications {
     Show-SectionHeader 'Applications (Name | Version | Publisher | Size)'
     $apps = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*, HKLM:\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
-        Where-Object { $_.DisplayName -and $_.DisplayName -ne "" -and ($_.DisplayName -notmatch "visual c\+\+") }
+        Where-Object { $_.DisplayName -and $_.DisplayName -ne "" -and ($_.DisplayName -notmatch "visual c\+\+") -and ($_.DisplayName -notmatch "driver") -and ($_.DisplayName -notmatch "nvidia") }
     if ($apps) {
         Write-Host ("Name".PadRight(40) + "Version".PadRight(15) + "Publisher".PadRight(25) + "Size (MB)") -ForegroundColor White
         Write-Host ("-"*40 + "-"*15 + "-"*25 + "-"*10)
