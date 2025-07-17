@@ -206,7 +206,7 @@ function Show-Applications {
     if ($apps) {
         Write-Host ("Name".PadRight(40) + "Version".PadRight(15) + "Publisher".PadRight(25) + "Size (MB)") -ForegroundColor White
         Write-Host ("-"*40 + "-"*15 + "-"*25 + "-"*10)
-        foreach ($app in ($apps | Sort-Object {[int]($app.EstimatedSize -as [int])} -Descending)) {
+        foreach ($app in ($apps | Sort-Object -Property {[int]($_.EstimatedSize -as [int])} -Descending)) {
             $name = $app.DisplayName.PadRight(40)
             $version = ($app.DisplayVersion -as [string]).PadRight(15)
             $publisher = ($app.Publisher -as [string]).PadRight(25)
