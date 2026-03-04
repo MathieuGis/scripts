@@ -9,16 +9,11 @@ Write-Host ("Free space BEFORE cleanup: {0:N2} GB" -f $Before) -ForegroundColor 
 # Start Cleanup
 
 Write-Host "Starting Temp cleanup for all users..." -ForegroundColor Cyan
-
 $UserProfiles = Get-ChildItem "C:\Users" -Directory -ErrorAction SilentlyContinue
-
 foreach ($Profile in $UserProfiles) {
-    
     $TempPath = Join-Path $Profile.FullName "AppData\Local\Temp"
-    
     if (Test-Path $TempPath) {
-        Write-Host "Cleaning: $TempPath" -ForegroundColor Yellow
-        
+        Write-Host "Cleaning: $TempPath" -ForegroundColor Cyan
         try {
             Get-ChildItem -Path $TempPath -Recurse -Force -ErrorAction SilentlyContinue | 
             Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
@@ -28,7 +23,6 @@ foreach ($Profile in $UserProfiles) {
         }
     }
 }
-
 
 Write-Host "`nCleaning other Temp folders..." -ForegroundColor Cyan
 Get-ChildItem "$env:TEMP" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
@@ -54,5 +48,6 @@ Write-Host ("Free space AFTER cleanup: {0:N2} GB" -f $After) -ForegroundColor Ye
 
 $Recovered = $After - $Before
 Write-Host ("Total space recovered: {0:N2} GB" -f $Recovered) -ForegroundColor Green
+
 
 
