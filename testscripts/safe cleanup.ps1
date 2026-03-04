@@ -24,7 +24,7 @@ foreach ($Profile in $UserProfiles) {
     }
 }
 
-Write-Host "`nCleaning other Temp folders..." -ForegroundColor Cyan
+Write-Host "Cleaning other Temp folders..." -ForegroundColor Cyan
 Get-ChildItem "$env:TEMP" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 Get-ChildItem "C:\Windows\Temp" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 
@@ -48,6 +48,7 @@ Write-Host ("Free space AFTER cleanup: {0:N2} GB" -f $After) -ForegroundColor Ye
 
 $Recovered = $After - $Before
 Write-Host ("Total space recovered: {0:N2} GB" -f $Recovered) -ForegroundColor Green
+
 
 
 
