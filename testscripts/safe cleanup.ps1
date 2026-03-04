@@ -1,49 +1,72 @@
-# Ensure Admin
+# ==============================
+#   Windows Disk Cleanup Tool
+# ==============================
+
+# --- Ensure Admin ---
 if (-not ([Security.Principal.WindowsPrincipal] `
     [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
     [Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    Write-Host "Please run this script as Administrator!" -ForegroundColor Red
+
+    Write-Host "`n[ERROR] Please run this script as Administrator.`n" -ForegroundColor Red
     exit
 }
 
 function Get-FreeSpaceGB {
-    (Get-PSDrive C).Free / 1GB
+    [math]::Round((Get-PSDrive C).Free / 1GB, 2)
 }
 
-Write-Host "Checking free disk space before cleanup..." -ForegroundColor Cyan
+Clear-Host
+Write-Host "=========================================" -ForegroundColor DarkGray
+Write-Host "           WINDOWS CLEANUP TOOL          " -ForegroundColor Cyan
+Write-Host "=========================================`n" -ForegroundColor DarkGray
+
+# --- Before ---
 $Before = Get-FreeSpaceGB
-Write-Host ("Free space BEFORE cleanup: {0:N2} GB" -f $Before) -ForegroundColor Yellow
+Write-Host ("Free Space Before Cleanup : {0} GB`n" -f $Before) -ForegroundColor Yellow
 
-# Temp Cleanup
-Write-Host "Cleaning Temp folders..." -ForegroundColor Cyan
+# ==============================
+#        CLEANUP START
+# ==============================
 
-$UserProfiles = Get-ChildItem "C:\Users" -Directory -ErrorAction SilentlyContinue
-foreach ($Profile in $UserProfiles) {
-    $TempPath = Join-Path $Profile.FullName "AppData\Local\Temp"
+Write-Host "Cleaning User Temp Folders..." -ForegroundColor Cyan
+Get-ChildItem "C:\Users" -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+    $TempPath = Join-Path $_.FullName "AppData\Local\Temp"
     if (Test-Path $TempPath) {
         Remove-Item "$TempPath\*" -Recurse -Force -ErrorAction SilentlyContinue
     }
 }
 
+Write-Host "Cleaning System Temp..." -ForegroundColor Cyan
 Remove-Item "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
 Remove-Item "C:\Windows\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
 
-# Recycle Bin
+Write-Host "Emptying Recycle Bin..." -ForegroundColor Cyan
 Clear-RecycleBin -Force -ErrorAction SilentlyContinue
 
-# Windows Update Cleanup
-Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
+Write-Host "Cleaning Windows Update Cache..." -ForegroundColor Cyan
 Stop-Service wuauserv -Force -ErrorAction SilentlyContinue
 Remove-Item "C:\Windows\SoftwareDistribution\Download\*" -Recurse -Force -ErrorAction SilentlyContinue
-Start-Service wuauserv
+Start-Service wuauserv -ErrorAction SilentlyContinue
 
-# Component Store
-Dism.exe /online /Cleanup-Image /StartComponentCleanup
+Write-Host "Optimizing Component Store (DISM ResetBase)..." -ForegroundColor Cyan
+Start-Process -FilePath "Dism.exe" `
+    -ArgumentList "/online /Cleanup-Image /StartComponentCleanup" `
+    -Wait -NoNewWindow
+Start-Process -FilePath "Dism.exe" `
+    -ArgumentList "/online /Cleanup-Image /StartComponentCleanup /ResetBase" `
+    -Wait -NoNewWindow
 
-# After Cleanup
-Write-Host "`nChecking free disk space after cleanup..." -ForegroundColor Cyan
+# ==============================
+#         RESULTS
+# ==============================
+
 $After = Get-FreeSpaceGB
-Write-Host ("Free space AFTER cleanup: {0:N2} GB" -f $After) -ForegroundColor Yellow
+$Recovered = [math]::Round($After - $Before, 2)
 
-$Recovered = $After - $Before
-Write-Host ("Total space recovered: {0:N2} GB" -f $Recovered) -ForegroundColor Green
+Write-Host "`n=========================================" -ForegroundColor DarkGray
+Write-Host "              CLEANUP SUMMARY            " -ForegroundColor Green
+Write-Host "=========================================" -ForegroundColor DarkGray
+
+Write-Host ("Free Space Before : {0} GB" -f $Before) -ForegroundColor yellow
+Write-Host ("Free Space After  : {0} GB" -f $After) -ForegroundColor yellow
+Write-Host ("Total Recovered   : {0} GB" -f $Recovered) -ForegroundColor Green
