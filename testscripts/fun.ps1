@@ -1,5 +1,5 @@
 # Visually enhanced fun.ps1
-
+cls
 Write-Host ("="*60) -ForegroundColor DarkCyan
 Write-Host ("SYSTEM INFORMATION REPORT".PadLeft(40)) -ForegroundColor White
 Write-Host ("="*60) -ForegroundColor DarkCyan
