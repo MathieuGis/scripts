@@ -1,7 +1,3 @@
-# ==============================
-#   Windows Disk Cleanup Tool
-# ==============================
-
 # --- Ensure Admin ---
 if (-not ([Security.Principal.WindowsPrincipal] `
     [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
@@ -16,17 +12,10 @@ function Get-FreeSpaceGB {
 }
 
 Clear-Host
-Write-Host "=========================================" -ForegroundColor DarkGray
-Write-Host "           WINDOWS CLEANUP TOOL          " -ForegroundColor Cyan
-Write-Host "=========================================`n" -ForegroundColor DarkGray
 
 # --- Before ---
 $Before = Get-FreeSpaceGB
 Write-Host ("Free Space Before Cleanup : {0} GB`n" -f $Before) -ForegroundColor Yellow
-
-# ==============================
-#        CLEANUP START
-# ==============================
 
 Write-Host "Cleaning User Temp Folders..." -ForegroundColor Cyan
 Get-ChildItem "C:\Users" -Directory -ErrorAction SilentlyContinue | ForEach-Object {
@@ -56,17 +45,10 @@ Start-Process -FilePath "Dism.exe" `
     -ArgumentList "/online /Cleanup-Image /StartComponentCleanup /ResetBase" `
     -Wait -NoNewWindow
 
-# ==============================
-#         RESULTS
-# ==============================
-
 $After = Get-FreeSpaceGB
 $Recovered = [math]::Round($After - $Before, 2)
-
-Write-Host "`n=========================================" -ForegroundColor DarkGray
-Write-Host "              CLEANUP SUMMARY            " -ForegroundColor Green
-Write-Host "=========================================" -ForegroundColor DarkGray
 
 Write-Host ("Free Space Before : {0} GB" -f $Before) -ForegroundColor yellow
 Write-Host ("Free Space After  : {0} GB" -f $After) -ForegroundColor yellow
 Write-Host ("Total Recovered   : {0} GB" -f $Recovered) -ForegroundColor Green
+
