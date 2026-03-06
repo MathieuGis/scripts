@@ -37,10 +37,11 @@ Stop-Service wuauserv -Force -ErrorAction SilentlyContinue
 Remove-Item "C:\Windows\SoftwareDistribution\Download\*" -Recurse -Force -ErrorAction SilentlyContinue
 Start-Service wuauserv -ErrorAction SilentlyContinue
 
-Write-Host "Optimizing Component Store (DISM ResetBase)..." -ForegroundColor Cyan
+Write-Host "Optimizing Component Store..." -ForegroundColor Cyan
 Start-Process -FilePath "Dism.exe" `
     -ArgumentList "/online /Cleanup-Image /StartComponentCleanup" `
     -Wait -NoNewWindow
+Write-Host "Optimizing Component Store (DISM ResetBase)..." -ForegroundColor Cyan
 Start-Process -FilePath "Dism.exe" `
     -ArgumentList "/online /Cleanup-Image /StartComponentCleanup /ResetBase" `
     -Wait -NoNewWindow
@@ -51,4 +52,5 @@ $Recovered = [math]::Round($After - $Before, 2)
 Write-Host ("Free Space Before : {0} GB" -f $Before) -ForegroundColor yellow
 Write-Host ("Free Space After  : {0} GB" -f $After) -ForegroundColor yellow
 Write-Host ("Total Recovered   : {0} GB" -f $Recovered) -ForegroundColor Green
+
 
