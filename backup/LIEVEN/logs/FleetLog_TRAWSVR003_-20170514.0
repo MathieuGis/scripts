@@ -1,4 +1,4 @@
-2017-05-14 04:25:56.248|1|FATAL|9T9xIsTK_UmWedTRgiod7w|Exception: 
+﻿2017-05-14 04:25:56.248|1|FATAL|9T9xIsTK_UmWedTRgiod7w|Exception: 
 System.NotImplementedException: The method or operation is not implemented.
    at Transics.Sky.Facade.Fws.FleetService.FleetService.GetEcoDriverInfo(String validationObjectXml, String argumentObjectXml, String& dataObjectXml)
 2017-05-14 04:25:56.252|1|ERROR|9T9xIsTK_UmWedTRgiod7w|ValidationObjectXml: <?xml version="1.0"?>

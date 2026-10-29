@@ -1,4 +1,4 @@
-2017-05-17 08:15:19.811|24|DEBUG|		184	0	Transics.Sky.Line.ServiceAccess.Scheduler.JobSchedulerController.Init
+﻿2017-05-17 08:15:19.811|24|DEBUG|		184	0	Transics.Sky.Line.ServiceAccess.Scheduler.JobSchedulerController.Init
 2017-05-17 08:15:23.847|22|INFO |DATABASE CONFIG MongoLogConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/Log?replicaSet=MongoDB_PR
 2017-05-17 08:15:23.856|22|INFO |DATABASE CONFIG MongoClosureConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/SocialClosurePR?replicaSet=MongoDB_PR
 2017-05-17 08:15:23.856|22|INFO |DATABASE CONFIG MiniBIConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/MiniBI?replicaSet=MongoDB_PR
