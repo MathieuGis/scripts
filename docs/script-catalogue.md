@@ -12,7 +12,7 @@ These commands illustrate invocation; they are not commands to run as part of va
 | [Invoke-ComponentCleanup.ps1](../powershell/maintenance/Invoke-ComponentCleanup.ps1) | Component-store cleanup and image repair; includes ResetBase | None | Administrator; DISM | `powershell -File powershell/maintenance/Invoke-ComponentCleanup.ps1` |
 | [Clear-TemporaryFiles.ps1](../powershell/maintenance/Clear-TemporaryFiles.ps1) | Remove user/system temporary files and update downloads | None | Administrator | `powershell -File powershell/maintenance/Clear-TemporaryFiles.ps1` |
 | [Copy-DocumentFolders.ps1](../powershell/files/Copy-DocumentFolders.ps1) | Copy document folders and produce progress logs | SourcePath, DestinationPath, LogDirectory, ExpectedSizeGB | Read/write access; robocopy; xcopy | `powershell -File powershell/files/Copy-DocumentFolders.ps1 -SourcePath C:\Source -DestinationPath D:\Copy -ExpectedSizeGB 10` |
-| [Get-LargestFolders.ps1](../powershell/files/Get-LargestFolders.ps1) | Find large folders across drives | None | Read access; elevated access may reveal more folders | `powershell -File powershell/files/Get-LargestFolders.ps1` |
+| [Get-LargestFolders.ps1](../powershell/files/Get-LargestFolders.ps1) | List the 10 largest top-level folders on C:\ (Notion version) | None | Read access; elevated access may reveal more folders | `powershell -File powershell/files/Get-LargestFolders.ps1` |
 | [Find-PhotoFolders.ps1](../powershell/files/Find-PhotoFolders.ps1) | Find picture folders on a selected drive | Interactive drive choice | Read access | `powershell -File powershell/files/Find-PhotoFolders.ps1` |
 | [Find-NetworkShares.ps1](../powershell/files/Find-NetworkShares.ps1) | List shares on discovered domain/workgroup computers | None | Windows PowerShell 5.1; WMI access; optional AD module | `powershell -File powershell/files/Find-NetworkShares.ps1` |
 | [Export-BelgianEmailMatches.ps1](../powershell/files/Export-BelgianEmailMatches.ps1) | Append Belgian email pattern matches from text files | InputDirectory, OutputFile | Read/write access | `powershell -File powershell/files/Export-BelgianEmailMatches.ps1 -InputDirectory C:\Input -OutputFile C:\Output\belgian.txt` |
@@ -40,3 +40,30 @@ These commands illustrate invocation; they are not commands to run as part of va
 | [projects/helpsite/sky/fieldtest-alternate/Update-FieldTestHelp.ps1](../projects/helpsite/sky/fieldtest-alternate/Update-FieldTestHelp.ps1) | Deploy help content to the environment named in the script | Optional path settings in config/helpsite.local.json | Existing host access; Windows PowerShell; administrator for scripts that elevate | `powershell -File projects/helpsite/sky/fieldtest-alternate/Update-FieldTestHelp.ps1` |
 
 The historical scripts under archive/ are retained for reference. Their runnable counterparts and former paths are listed in [path-migration.md](path-migration.md).
+
+## Scripts imported from Notion
+
+Source links, exact mappings and source limitations are in [notion-sync.md](notion-sync.md). These are Windows scripts; maintenance tools change the target system.
+
+| Script | Source purpose | Parameters/input and requirements |
+| --- | --- | --- |
+| [Get-WindowsUptime.ps1](../powershell/diagnostics/Get-WindowsUptime.ps1) | Windows Uptime | Windows; CIM |
+| [Get-LastInstalledUpdates.ps1](../powershell/diagnostics/Get-LastInstalledUpdates.ps1) | last installed updates | Windows Update event log access |
+| [Get-FirefoxInstallations.ps1](../powershell/diagnostics/Get-FirefoxInstallations.ps1) | firefox installed? | Windows; profile read access |
+| [Test-DriverSecurity.ps1](../powershell/diagnostics/Test-DriverSecurity.ps1) | driver check | Administrator; PnpDevice module; SFC |
+| [sitra-commands.md](../docs/sitra-commands.md) | Sitra Commands | Manual steps; environment-specific domain; restart between registration steps |
+| [Get-InstalledApplications.ps1](../powershell/diagnostics/Get-InstalledApplications.ps1) | list installed apps | Windows PowerShell 5.1; administrator recommended |
+| [Get-ChromeInstallations.ps1](../powershell/diagnostics/Get-ChromeInstallations.ps1) | Chrome installed? | Windows; profile read access |
+| [Get-BlueScreenInfo.ps1](../powershell/diagnostics/Get-BlueScreenInfo.ps1) | Bluescreen info | Windows event logs; dump-folder read access |
+| [Invoke-FullWindowsRepair.ps1](../powershell/maintenance/Invoke-FullWindowsRepair.ps1) | Full Windows Repair | Administrator; DISM; SFC; disk and network changes; restart required |
+| [Get-BrowserInstallations.ps1](../powershell/diagnostics/Get-BrowserInstallations.ps1) | Chrome/firefox check | Windows; profile read access |
+| [Remove-Yandex.ps1](../powershell/maintenance/Remove-Yandex.ps1) | remove yandex | Windows PowerShell 5.1; administrator with -Execute; optional -RemoveUserData |
+| [Compress-OutlookPst.ps1](../powershell/maintenance/Compress-OutlookPst.ps1) | shrink PST files | Classic Outlook; configured profile; closes Outlook; see source limitations |
+| [Get-TopMemoryProcesses.ps1](../powershell/diagnostics/Get-TopMemoryProcesses.ps1) | top 10 memory hoggers | Windows; see source and script body |
+| [Watch-SystemUsage.ps1](../powershell/diagnostics/Watch-SystemUsage.ps1) | cpu and memory usage | Windows; English performance counter names; Ctrl+C to stop |
+| [Remove-WindowsUpdates.ps1](../powershell/maintenance/Remove-WindowsUpdates.ps1) | Remove Windows updates | Administrator; targets KB5064401 and KB5065426 |
+| [Update-Chrome.ps1](../powershell/maintenance/Update-Chrome.ps1) | Auto update Chrome | Windows; installed Chrome; Google updater tasks |
+| [Get-UnexpectedShutdowns.ps1](../powershell/diagnostics/Get-UnexpectedShutdowns.ps1) | Unexpected Shutdown | Windows; see source and script body |
+| [Get-RemoteChromeVersion.ps1](../powershell/diagnostics/Get-RemoteChromeVersion.ps1) | Check Chrome version | Remote Registry access to configured PC01/PC02/PC03 |
+| [Get-OfficeVersion.ps1](../powershell/diagnostics/Get-OfficeVersion.ps1) | Check installed Office version | Windows; see source and script body |
+| [Reinstall-Edge.ps1](../powershell/maintenance/Reinstall-Edge.ps1) | Reinstall Edge | Administrator; internet access; changes Edge installation |

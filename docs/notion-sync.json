@@ -1,0 +1,198 @@
+{
+  "synced_on": "2026-10-29",
+  "source": "Scripts",
+  "pages": [
+    {
+      "title": "Windows Uptime",
+      "notion_url": "https://app.notion.com/p/2cd6138e249f80d0abe1c13256e7dcda?pvs=204",
+      "notion_last_edited": "2026-10-21T07:17:54.848Z",
+      "path": "powershell/diagnostics/Get-WindowsUptime.ps1",
+      "status": "added",
+      "sha256": "45e9d64040867c473d56b7924fb648b95283c8243b3a73406f4cab0860e7042d"
+    },
+    {
+      "title": "pc info",
+      "notion_url": "https://app.notion.com/p/3266138e249f80a88271c2f11fcd8c69?pvs=204",
+      "notion_last_edited": "2026-10-21T07:17:59.947Z",
+      "path": "powershell/diagnostics/Get-SystemReport.ps1",
+      "status": "unchanged",
+      "sha256": "a40e3391bbea6244fc0a1fc1548598a01567573791d9e925e84f28ff2d6c3dd6"
+    },
+    {
+      "title": "safe disk cleanup",
+      "notion_url": "https://app.notion.com/p/2c46138e249f805a835cefa5f7b3641d?pvs=204",
+      "notion_last_edited": "2026-09-30T11:51:30.993Z",
+      "path": "powershell/maintenance/Clear-TemporaryFiles.ps1",
+      "status": "updated",
+      "sha256": "55ab3ecbfb1453f33e5e21d63e534ad084d752a4e55907f6a103e62554ce9974"
+    },
+    {
+      "title": "last installed updates",
+      "notion_url": "https://app.notion.com/p/3416138e249f80d8bdd8ce1ec734894f?pvs=204",
+      "notion_last_edited": "2026-10-21T07:18:04.389Z",
+      "path": "powershell/diagnostics/Get-LastInstalledUpdates.ps1",
+      "status": "added",
+      "sha256": "5d803e06e63a385e3f10f765fc6ba75de9778a88cd4a1de535175ac6c7addff4"
+    },
+    {
+      "title": "firefox installed?",
+      "notion_url": "https://app.notion.com/p/3fe6138e249f80448c8cf69ccc5f1bfb?pvs=204",
+      "notion_last_edited": "2026-10-21T07:18:18.515Z",
+      "path": "powershell/diagnostics/Get-FirefoxInstallations.ps1",
+      "status": "added",
+      "sha256": "09a2ece03fa292660cd9f0dcc766ed3b666252e31e90b73884a86428d110de5a"
+    },
+    {
+      "title": "driver check",
+      "notion_url": "https://app.notion.com/p/3cf6138e249f80be86e8d2683eaa97a1?pvs=204",
+      "notion_last_edited": "2026-10-21T07:18:08.273Z",
+      "path": "powershell/diagnostics/Test-DriverSecurity.ps1",
+      "status": "added",
+      "sha256": "b1549a34619b41f35f730b90951f99c01765f5e7996df80852b160bffc505557"
+    },
+    {
+      "title": "Sitra Commands",
+      "notion_url": "https://app.notion.com/p/2776138e249f80e0aec3c8f0dac2ef03?pvs=204",
+      "notion_last_edited": "2026-06-17T08:41:16.756Z",
+      "path": "docs/sitra-commands.md",
+      "status": "added",
+      "sha256": "5875968ee91742f7436f1df3955eafde39901264200253f92a9e30cf3c21d036"
+    },
+    {
+      "title": "list installed apps",
+      "notion_url": "https://app.notion.com/p/2b76138e249f80149f9be687aa4f0080?pvs=204",
+      "notion_last_edited": "2026-10-19T10:02:25.856Z",
+      "path": "powershell/diagnostics/Get-InstalledApplications.ps1",
+      "status": "added",
+      "sha256": "594bb4e0fe43df703441f7a9dcddfd9a9883e84464012b90a561ad3010dea5d4"
+    },
+    {
+      "title": "Chrome installed?",
+      "notion_url": "https://app.notion.com/p/4006138e249f8097a1aaf644441e0262?pvs=204",
+      "notion_last_edited": "2026-10-21T14:05:01.044Z",
+      "path": "powershell/diagnostics/Get-ChromeInstallations.ps1",
+      "status": "added",
+      "sha256": "0d878e36c2784fd14dff02a653bf46913b51f0e7b21fb59d6903fcdfe095e0f8"
+    },
+    {
+      "title": "Bluescreen info",
+      "notion_url": "https://app.notion.com/p/3826138e249f80bc8f44f45f875caa11?pvs=204",
+      "notion_last_edited": "2026-10-20T08:26:42.685Z",
+      "path": "powershell/diagnostics/Get-BlueScreenInfo.ps1",
+      "status": "added",
+      "sha256": "38b8a3965171da5f0fcf2d7109df19acc51c0827ab1fe63ebe756d98d36362c6"
+    },
+    {
+      "title": "Full Windows Repair",
+      "notion_url": "https://app.notion.com/p/2736138e249f80578a6fc286167c342b?pvs=204",
+      "notion_last_edited": "2026-08-26T14:08:18.125Z",
+      "path": "powershell/maintenance/Invoke-FullWindowsRepair.ps1",
+      "status": "added",
+      "sha256": "d0846d74f8a76002a92ebe69a0161e8181fe0584173d53ec82030cb6a17130c9"
+    },
+    {
+      "title": "Chrome/firefox check",
+      "notion_url": "https://app.notion.com/p/4016138e249f80f4889dd1e5c26ebbda?pvs=204",
+      "notion_last_edited": "2026-10-22T12:56:55.501Z",
+      "path": "powershell/diagnostics/Get-BrowserInstallations.ps1",
+      "status": "added",
+      "sha256": "6bb841912199d11746b03bb4718104909c81e9b2c3964174ba2b55171cd6538a"
+    },
+    {
+      "title": "remove yandex",
+      "notion_url": "https://app.notion.com/p/3fb6138e249f80fe9c7dd91a165e3e37?pvs=204",
+      "notion_last_edited": "2026-10-21T07:18:13.958Z",
+      "path": "powershell/maintenance/Remove-Yandex.ps1",
+      "status": "added",
+      "sha256": "a300c03185d4a7e61ef9f4f3dc8f42bf48b473a67226298a9751e737e4c417b5"
+    },
+    {
+      "title": "shrink PST files",
+      "notion_url": "https://app.notion.com/p/2af6138e249f808f86edcf2312545232?pvs=204",
+      "notion_last_edited": "2026-08-31T12:40:57.671Z",
+      "path": "powershell/maintenance/Compress-OutlookPst.ps1",
+      "status": "added",
+      "sha256": "a218c39133e6e8d4dddeeaf6e5212ab901411b0e149a956096281bba375a519b"
+    },
+    {
+      "title": "DISM",
+      "notion_url": "https://app.notion.com/p/2736138e249f801f8605e3ec5334f470?pvs=204",
+      "notion_last_edited": "2025-09-29T14:47:57.106Z",
+      "path": "powershell/maintenance/Repair-WindowsImage.ps1",
+      "status": "updated",
+      "sha256": "a72964d2fe753c1778575dc4b2339a4062388020379da68ce9c920c83872d2cb"
+    },
+    {
+      "title": "10 largest folders",
+      "notion_url": "https://app.notion.com/p/2c36138e249f802e82a8d93930b16c13?pvs=204",
+      "notion_last_edited": "2025-12-17T14:11:33.362Z",
+      "path": "powershell/files/Get-LargestFolders.ps1",
+      "status": "updated",
+      "sha256": "d42ca12232d130c10d54768cd1ee0c220c493c1163971aef07ad690ae940ca87"
+    },
+    {
+      "title": "top 10 memory hoggers",
+      "notion_url": "https://app.notion.com/p/2c46138e249f80a481f3dcbfda1ceb5b?pvs=204",
+      "notion_last_edited": "2025-12-09T08:01:23.940Z",
+      "path": "powershell/diagnostics/Get-TopMemoryProcesses.ps1",
+      "status": "added",
+      "sha256": "a2a209f33fbaaf56510aba584868c92f6b5c1febe83bab0479208b1282db0a8b"
+    },
+    {
+      "title": "cpu and memory usage",
+      "notion_url": "https://app.notion.com/p/28e6138e249f8077b3caf5c8be1404e2?pvs=204",
+      "notion_last_edited": "2026-01-06T08:56:43.457Z",
+      "path": "powershell/diagnostics/Watch-SystemUsage.ps1",
+      "status": "added",
+      "sha256": "2b9bdcf5d3f5bd13b5c146dc82cfe9d2287cc8263526f7b6b97da525b134ac36"
+    },
+    {
+      "title": "Remove Windows updates",
+      "notion_url": "https://app.notion.com/p/2776138e249f80a6a4b5c01d70cc14b8?pvs=204",
+      "notion_last_edited": "2025-12-09T14:27:54.702Z",
+      "path": "powershell/maintenance/Remove-WindowsUpdates.ps1",
+      "status": "added",
+      "sha256": "65e8c961aae4366a8f2e4d661e9664f2df101b405022617c2dd8f4a1db4c39d9"
+    },
+    {
+      "title": "Auto update Chrome",
+      "notion_url": "https://app.notion.com/p/27d6138e249f805fb89cfec1a475688b?pvs=204",
+      "notion_last_edited": "2025-12-09T08:15:03.515Z",
+      "path": "powershell/maintenance/Update-Chrome.ps1",
+      "status": "added",
+      "sha256": "65049b89242607476ddada0e0d106e54f138ee964c2ad11856fb392d335f50c8"
+    },
+    {
+      "title": "Unexpected Shutdown",
+      "notion_url": "https://app.notion.com/p/2736138e249f8066adf8fe9547e2a9bc?pvs=204",
+      "notion_last_edited": "2025-09-29T14:47:31.790Z",
+      "path": "powershell/diagnostics/Get-UnexpectedShutdowns.ps1",
+      "status": "added",
+      "sha256": "500d5dd889ba459074a445302e8a7853a1a95ffa040db7b9f3712b05b01e0dd2"
+    },
+    {
+      "title": "Check Chrome version",
+      "notion_url": "https://app.notion.com/p/2726138e249f80f9840ccf96bc3e475e?pvs=204",
+      "notion_last_edited": "2025-12-08T12:20:22.285Z",
+      "path": "powershell/diagnostics/Get-RemoteChromeVersion.ps1",
+      "status": "added",
+      "sha256": "c6d9b4ce0ccefb80eb192b9bfd6904b40b5db602cbc6caeab579fe4335b07ac8"
+    },
+    {
+      "title": "Check installed Office version",
+      "notion_url": "https://app.notion.com/p/2726138e249f80a8945fc90fa8c383b5?pvs=204",
+      "notion_last_edited": "2025-09-29T14:47:19.163Z",
+      "path": "powershell/diagnostics/Get-OfficeVersion.ps1",
+      "status": "added",
+      "sha256": "b6e72d3c9b465808c1ca57c277056c56c4eb2e32ec1a0810e66375059b8c2978"
+    },
+    {
+      "title": "Reinstall Edge",
+      "notion_url": "https://app.notion.com/p/2926138e249f8011a49ddf084b6863a8?pvs=204",
+      "notion_last_edited": "2025-11-18T15:05:51.044Z",
+      "path": "powershell/maintenance/Reinstall-Edge.ps1",
+      "status": "added",
+      "sha256": "3218f7a0f2eba9ba080cbf1e64dfb3121e8899c0902c2757801d5e051b409e8a"
+    }
+  ]
+}
