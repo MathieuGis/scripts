@@ -1,0 +1,1 @@
+﻿Get-AppxPackage Microsoft.MicrosoftEdge.Stable -AllUsers | Remove-AppxPackage -ErrorAction SilentlyContinue; Invoke-WebRequest "https://go.microsoft.com/fwlink/?linkid=2149051" -OutFile "$env:TEMP\MicrosoftEdgeSetup.exe"; Start-Process "$env:TEMP\MicrosoftEdgeSetup.exe" -ArgumentList "/install" -Wait; Remove-Item "$env:TEMP\MicrosoftEdgeSetup.exe" -Force
