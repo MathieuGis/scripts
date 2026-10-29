@@ -1,0 +1,570 @@
+﻿2017-05-17 08:24:53.150|68|DEBUG|		212	0	Transics.Sky.Line.ServiceAccess.Scheduler.JobSchedulerController.Init
+2017-05-17 08:24:54.527|26|INFO |DATABASE CONFIG MongoLogConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/Log?replicaSet=MongoDB_PR
+2017-05-17 08:24:54.533|26|INFO |DATABASE CONFIG MongoClosureConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/SocialClosurePR?replicaSet=MongoDB_PR
+2017-05-17 08:24:54.533|26|INFO |DATABASE CONFIG MiniBIConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/MiniBI?replicaSet=MongoDB_PR
+2017-05-17 08:24:54.533|26|INFO |DATABASE CONFIG MongoConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018
+2017-05-17 08:24:54.533|26|INFO |DATABASE CONFIG MongoFileStoreConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/Files?replicaSet=MongoDB_PR
+2017-05-17 08:24:54.533|26|INFO |DATABASE CONFIG MongoReportsConnection: mongodb://MONGO_SKYLING_001:27018,MONGO_SKYLING_002:27018,MONGO_SKYLING_003:27018/Skyling?replicaSet=RS_SKYLING_PROD
+2017-05-17 08:24:54.534|26|INFO |DATABASE CONFIG OldFleetRegistrationsMongoConnection: mongodb://MONGO_STD_001:27018,MONGO_STD_002:27018,MONGO_STD_003:27018/OldFleetRegistrations?replicaSet=MongoDB_PR
+2017-05-17 08:24:55.461|26|DEBUG|		1	2	| | Transics.Sky.Line.ServiceAccess.GpsDll.GpsDll64.Init
+2017-05-17 08:24:55.461|26|DEBUG|		3	1	| Transics.Sky.Line.ServiceAccess.GpsDll.GpsDll.Init
+2017-05-17 08:24:55.461|26|DEBUG|		17	0	Transics.Sky.Line.BusinessLogic.GpsDllController.Init
+2017-05-17 08:24:55.464|26|DEBUG|http://fleetwebservice.transics.org/FWSRegistrations_GetAllRegistrations - begin
+2017-05-17 08:24:55.528|26|DEBUG|		13	0	Sky.ConfigurationService.BusinessLogic.CustomerConnectionStringController.GetConnectionString
+2017-05-17 08:24:55.536|135|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - begin
+2017-05-17 08:24:55.542|135|DEBUG|		0	0	Sky.ConfigurationService.BusinessLogic.CustomerConnectionStringController.GetConnectionString
+2017-05-17 08:24:55.627|119|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - begin
+2017-05-17 08:24:55.627|142|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - begin
+2017-05-17 08:24:55.627|119|DEBUG|		0	0	Sky.ConfigurationService.BusinessLogic.CustomerConnectionStringController.GetConnectionString
+2017-05-17 08:24:55.628|142|DEBUG|		0	0	Sky.ConfigurationService.BusinessLogic.CustomerConnectionStringController.GetConnectionString
+2017-05-17 08:24:55.630|71|DEBUG|http://fleetwebservice.transics.org/FWSRDD_PollMessages - begin
+2017-05-17 08:24:55.633|35|DEBUG|http://fleetwebservice.transics.org/FWSDocuments_GetDocuments - begin
+2017-05-17 08:24:55.638|106|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - begin
+2017-05-17 08:24:55.639|106|DEBUG|		0	0	Sky.ConfigurationService.BusinessLogic.CustomerConnectionStringController.GetConnectionString
+2017-05-17 08:24:55.639|35|DEBUG|		0	0	Sky.ConfigurationService.BusinessLogic.CustomerConnectionStringController.GetConnectionString
+2017-05-17 08:24:55.641|71|DEBUG|		0	0	Sky.ConfigurationService.BusinessLogic.CustomerConnectionStringController.GetConnectionString
+2017-05-17 08:24:55.938|85|DEBUG|http://fleetwebservice.transics.org/CheckDatabaseStatus_v2 - begin
+2017-05-17 08:24:55.940|85|DEBUG|http://fleetwebservice.transics.org/CheckDatabaseStatus_v2 - end
+2017-05-17 08:24:57.573|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	100	2	| | Transics.Sky.Line.DataAccess.Rdd.SqlRddCardReader.UpdateCardAlive
+2017-05-17 08:24:57.573|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	858	1	| Transics.Sky.Line.BusinessLogic.RddController.UpdateCardAlive
+2017-05-17 08:24:57.576|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	101	1	| Transics.Sky.Line.DataAccess.SqlCustomer.GetCustomerByCode
+2017-05-17 08:24:57.576|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	609	0	Transics.Sky.Line.BusinessLogic.CustomerController.GetCustomerByCode
+2017-05-17 08:24:57.576|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	104	1	| Transics.Sky.Line.DataAccess.SqlCustomer.GetCustomerByCode
+2017-05-17 08:24:57.576|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	908	0	Transics.Sky.Line.BusinessLogic.CustomerController.GetCustomerByCode
+2017-05-17 08:24:57.615|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	4	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:57.615|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	9	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:57.615|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	4	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:57.615|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	9	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:57.632|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	2	1	| Transics.Sky.Facade.Infrastructure.Events.InformTxIrisBeforeFleetCommitHandler.Handle
+2017-05-17 08:24:57.644|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	1	1	| Transics.Sky.Line.ServiceAccess.TxIris.Notifier.IrisFleetCommitHandler.Handle
+2017-05-17 08:24:58.017|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	20	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.018|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	29	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.102|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	629	1	| Transics.Sky.Line.DataAccess.SqlCustomer.GetCustomerByCode
+2017-05-17 08:24:58.102|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	1134	0	Transics.Sky.Line.BusinessLogic.CustomerController.GetCustomerByCode
+2017-05-17 08:24:58.104|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	1	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.104|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	2	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.107|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	2	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.107|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	2	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.120|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	1	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.120|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	1	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.200|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	30	1	| Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscan.GetDocuments
+2017-05-17 08:24:58.230|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	16	2	| | Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscanPage.FillInDocumentPages
+2017-05-17 08:24:58.249|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	12	3	| | | Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscanPageExtraInfo.FillInPageExtraInfo
+2017-05-17 08:24:58.249|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	16	2	| | Transics.Sky.Line.BusinessLogic.DocscanModule.DocscanPageExtraInfoController.FillInPageExtraInfo
+2017-05-17 08:24:58.259|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	4	2	| | Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscanDocumentType.GetDocumentTypesByIds
+2017-05-17 08:24:58.276|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	3	2	| | Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscan.FillInSkyPlanningItems
+2017-05-17 08:24:58.333|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	2	| | Transics.Sky.Line.BusinessLogic.PlanningModule.PlanningController.GetPlanningItems
+2017-05-17 08:24:58.358|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	2	2	| | Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscan.FillInTreatmentInfo
+2017-05-17 08:24:58.361|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	184	2	| | Sky.TextMessages.DataAccess.SqlTextMessage.GetDriverAndTruckTextMessagesById
+2017-05-17 08:24:58.362|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	2	| | Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscan.FillInFleetRelatedData
+2017-05-17 08:24:58.370|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	6	2	| | Sky.TextMessages.DataAccess.SqlTextMessage.FillinTextMessageStatus
+2017-05-17 08:24:58.375|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	8	2	| | Transics.Sky.Line.DataAccess.DocscanModule.SqlDocscan.FillInSkyTripReportAction
+2017-05-17 08:24:58.382|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	6	3	| | | Sky.TextMessages.DataAccess.SqlTextMessageReadInfo.FillReadInfo
+2017-05-17 08:24:58.382|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	10	2	| | Sky.TextMessages.BusinessLogic.TextMessageReadInfoController.FillReadInfoInternal
+2017-05-17 08:24:58.420|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	40	2	| | Transics.Sky.Line.DataAccess.SqlTripReportAction.GetByIds
+2017-05-17 08:24:58.420|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	945	1	| Transics.Sky.Line.DataAccess.SqlCustomer.GetCustomerByCode
+2017-05-17 08:24:58.420|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	1453	0	Transics.Sky.Line.BusinessLogic.CustomerController.GetCustomerByCode
+2017-05-17 08:24:58.422|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	2	2	| | Sky.TextMessages.DataAccess.SqlTextMessage.GetTextMessageReply
+2017-05-17 08:24:58.423|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	294	1	| Sky.TextMessages.BusinessLogic.TextMessageController.GetDriverAndTruckTextMessagesByIdsInternal
+2017-05-17 08:24:58.423|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	2	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.423|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	2	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.426|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	2	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.426|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	3	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.427|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	302	0	Sky.TextMessages.BusinessLogic.TextMessageController.GetDriverAndTruckTextMessagesByIds
+2017-05-17 08:24:58.446|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	265	1	| Sky.TextMessages.DataAccess.SqlTextMessage.GetTextMessagesById
+2017-05-17 08:24:58.451|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	4	1	| Sky.TextMessages.DataAccess.SqlTextMessage.FillinTextMessageStatus
+2017-05-17 08:24:58.455|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	3	2	| | Sky.TextMessages.DataAccess.SqlTextMessageReadInfo.FillReadInfo
+2017-05-17 08:24:58.455|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	4	1	| Sky.TextMessages.BusinessLogic.TextMessageReadInfoController.FillReadInfoInternal
+2017-05-17 08:24:58.461|71|DEBUG|Metrics: GlobalContext Name set to TRAWSVR003.w3wp
+2017-05-17 08:24:58.464|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	0	3	| | | Transics.Sky.Line.BusinessLogic.DriverLoginController.GetDriverLoginSessionsByIds
+2017-05-17 08:24:58.467|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	7	1	| Sky.TextMessages.DataAccess.SqlTextMessage.GetTextMessageReplies
+2017-05-17 08:24:58.473|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	412	0	Sky.TextMessages.BusinessLogic.TextMessageController.GetTextMessagesByIds
+2017-05-17 08:24:58.489|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	17	3	| | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.GetLastSession
+2017-05-17 08:24:58.501|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	21	0	Sky.TextMessages.DataAccess.SqlTextMessageWithAddressBooks.FillAddressBookForOneMessage
+2017-05-17 08:24:58.520|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	50	1	| Sky.TextMessages.DataAccess.SqlTextMessage.GetTextMessagesByIds
+2017-05-17 08:24:58.534|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	11	1	| Sky.TextMessages.DataAccess.SqlTextMessage.FillinTextMessageStatus
+2017-05-17 08:24:58.539|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	9	3	| | | Transics.Sky.Line.DataAccess.DynamicDataModule.SqlDynamicData.FillInEditedDynamicData
+2017-05-17 08:24:58.549|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	7	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:24:58.549|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	14	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:24:58.556|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	6	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:24:58.556|142|DEBUG|	cf20676f-86fe-4260-9b83-5ddd30db7cc5	6	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:24:58.558|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	19	2	| | Sky.TextMessages.DataAccess.SqlTextMessageReadInfo.FillReadInfo
+2017-05-17 08:24:58.558|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	24	1	| Sky.TextMessages.BusinessLogic.TextMessageReadInfoController.FillReadInfoInternal
+2017-05-17 08:24:58.567|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	8	1	| Sky.TextMessages.DataAccess.SqlTextMessage.GetTextMessageReplies
+2017-05-17 08:24:58.572|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	145	0	Sky.TextMessages.BusinessLogic.TextMessageController.GetTextMessagesByIds
+2017-05-17 08:24:58.582|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	25	3	| | | Transics.Sky.Line.DataAccess.DynamicDataModule.SqlDynamicData.GetOriginalDynamicDataForTrucks
+2017-05-17 08:24:58.593|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	10	1	| Transics.Sky.Line.DataAccess.SqlCustomer.GetCustomerByCode
+2017-05-17 08:24:58.593|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	10	0	Transics.Sky.Line.BusinessLogic.CustomerController.GetCustomerByCode
+2017-05-17 08:24:58.596|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	0	3	| | | Transics.Sky.Line.BusinessLogic.DriverLoginController.GetDriverLoginSessionsByIds
+2017-05-17 08:24:58.599|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	80	2	| | Transics.Sky.Line.BusinessLogic.DynamicDataModule.DynamicDataReportController.FillInDynamicData
+2017-05-17 08:24:58.603|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.NotifyServiceBus.NotifyServiceBusSduFormatter
+2017-05-17 08:24:58.605|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.NotifyServiceBus.NotifyServicebusEcotripDataList
+2017-05-17 08:24:58.606|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.NotifyServiceBus.NotifyServicebusEcoMonitorDataList
+2017-05-17 08:24:58.612|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingsForCustomer
+2017-05-17 08:24:58.613|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	13	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingsForCustomer
+2017-05-17 08:24:58.619|142|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - end
+2017-05-17 08:24:58.626|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.626|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.626|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	27	3	| | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.GetPreviousDriverSessionTrucks
+2017-05-17 08:24:58.641|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	2	| | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.641|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	1	| Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.642|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	12	3	| | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.GetPreviousCoDriverSessionTrucks
+2017-05-17 08:24:58.667|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	13	4	| | | | Transics.Sky.Line.DataAccess.SqlDriverLoginDetail.FillInDetails
+2017-05-17 08:24:58.667|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	23	3	| | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionData
+2017-05-17 08:24:58.668|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	71	2	| | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionDataTrucks
+2017-05-17 08:24:58.668|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	91	1	| Transics.Sky.Line.DataAccess.SqlDriverLoginSession.Get
+2017-05-17 08:24:58.671|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	0	1	| Transics.Sky.Line.BusinessLogic.DriverLoginController.RemoveSessionsOutSideOfRange
+2017-05-17 08:24:58.671|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	98	0	Transics.Sky.Line.BusinessLogic.DriverLoginController.GetLoginSessions
+2017-05-17 08:24:58.721|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.ServiceBusTopicClient.CloseConnection
+2017-05-17 08:24:58.735|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	54	0	Sky.TextMessages.DataAccess.SqlTextMessageWithAddressBooks.FillAddressBooks
+2017-05-17 08:24:58.737|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	168	1	| Transics.Sky.Line.ServiceBus.BusinessLogic.NotifyServiceBusFleetCommitHandler.Handle
+2017-05-17 08:24:58.756|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	2046	0	Transics.Sky.Facade.Fws.Facade.RddFacade.UpdateCardAlive
+2017-05-17 08:24:58.766|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	4	| | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingsForCustomer
+2017-05-17 08:24:58.766|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	3	| | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingsForCustomer
+2017-05-17 08:24:58.792|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	4	| | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.792|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	3	| | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.796|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	303	3	| | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.GetPreviousCoDriverSessionTruck
+2017-05-17 08:24:58.801|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	5	4	| | | | Transics.Sky.Line.DataAccess.SqlDriverLoginDetail.FillInDetails
+2017-05-17 08:24:58.801|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	5	3	| | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionData
+2017-05-17 08:24:58.801|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	339	2	| | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionDataTrucks
+2017-05-17 08:24:58.801|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	348	1	| Transics.Sky.Line.DataAccess.SqlDriverLoginSession.Get
+2017-05-17 08:24:58.801|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	0	1	| Transics.Sky.Line.BusinessLogic.DriverLoginController.RemoveSessionsOutSideOfRange
+2017-05-17 08:24:58.801|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	356	0	Transics.Sky.Line.BusinessLogic.DriverLoginController.GetLoginSessions
+2017-05-17 08:24:58.803|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	4	| | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.803|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	3	| | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.803|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	177	3	| | | Transics.Sky.Line.DataAccess.DeviceheaderModule.SqlDeviceheader.FillInProperties
+2017-05-17 08:24:58.807|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	10	2	| | Transics.Sky.Line.DataAccess.SqlRdd.GetCurrentSessionIDOfCardReader
+2017-05-17 08:24:58.812|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	198	2	| | Transics.Sky.Line.BusinessLogic.DeviceHeaderModule.DeviceHeaderController.FillInProperties
+2017-05-17 08:24:58.812|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	603	1	| Transics.Sky.Line.BusinessLogic.DocscanModule.DocscanController.FillInAdditionalProperties
+2017-05-17 08:24:58.812|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	649	0	Transics.Sky.Line.BusinessLogic.DocscanModule.DocscanController.GetDocscanDocuments
+2017-05-17 08:24:58.814|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	11	0	Sky.TextMessages.DataAccess.SqlTextMessageWithAddressBooks.FillAddressBookForOneMessage
+2017-05-17 08:24:58.822|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	9	2	| | Transics.Sky.Line.DataAccess.SqlRdd.GetSessionsByCustomerId
+2017-05-17 08:24:58.822|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	54	1	| Transics.Sky.Line.BusinessLogic.RddController.GetAuthenticationMessage
+2017-05-17 08:24:58.824|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	1	| Transics.Sky.Facade.Infrastructure.Events.InformTxIrisBeforeFleetCommitHandler.Handle
+2017-05-17 08:24:58.824|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	8	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.824|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	8	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.830|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	1	| Transics.Sky.Line.ServiceAccess.TxIris.Notifier.IrisFleetCommitHandler.Handle
+2017-05-17 08:24:58.830|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.NotifyServiceBus.NotifyServiceBusSduFormatter
+2017-05-17 08:24:58.830|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.NotifyServiceBus.NotifyServicebusEcotripDataList
+2017-05-17 08:24:58.830|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.NotifyServiceBus.NotifyServicebusEcoMonitorDataList
+2017-05-17 08:24:58.830|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	2	| | Transics.Sky.ServiceBus.BusinessLogic.ServiceBusTopicClient.CloseConnection
+2017-05-17 08:24:58.831|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	0	1	| Transics.Sky.Line.ServiceBus.BusinessLogic.NotifyServiceBusFleetCommitHandler.Handle
+2017-05-17 08:24:58.831|71|DEBUG|	7863a00a-9137-45ae-b142-249b3ce89ef3	72	0	Transics.Sky.Facade.Fws.Facade.RddFacade.GetAuthenticationMessage
+2017-05-17 08:24:58.833|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	1358	1	| Transics.Sky.Line.DataAccess.SqlCustomer.GetCustomerByCode
+2017-05-17 08:24:58.833|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	1837	0	Transics.Sky.Line.BusinessLogic.CustomerController.GetCustomerByCode
+2017-05-17 08:24:58.834|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	7	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserById
+2017-05-17 08:24:58.834|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	13	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserById
+2017-05-17 08:24:58.834|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	4	2	| | Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetCurrentUserItemLinksWithoutPeriodByUser
+2017-05-17 08:24:58.834|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	8	1	| Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetCurrentUserItemLinksByUserId
+2017-05-17 08:24:58.838|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	1	3	| | | Transics.Sky.Line.BusinessLogic.CalculationProfileController.GetCalculationProfileValidityByCalculationProfileValidityIds
+2017-05-17 08:24:58.838|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.838|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.838|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	4	0	Transics.Sky.Line.DataAccess.SqlLanguage.GetById
+2017-05-17 08:24:58.841|71|DEBUG|http://fleetwebservice.transics.org/FWSRDD_PollMessages - end
+2017-05-17 08:24:58.846|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	12	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserById
+2017-05-17 08:24:58.847|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	12	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserById
+2017-05-17 08:24:58.847|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	9	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.847|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	9	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserByUserCodeForCustomer
+2017-05-17 08:24:58.852|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	1	| Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.852|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	0	Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.860|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	7	2	| | Sky.TextMessages.DataAccess.SqlTextMessage.GetDriverAndTruckTextMessagesById
+2017-05-17 08:24:58.864|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	6	2	| | Transics.Sky.Line.DataAccess.SqlGroup.GetNewGroups
+2017-05-17 08:24:58.864|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	3	2	| | Sky.TextMessages.DataAccess.SqlTextMessage.FillinTextMessageStatus
+2017-05-17 08:24:58.865|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	18	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:24:58.865|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	18	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:24:58.870|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	6	3	| | | Sky.TextMessages.DataAccess.SqlTextMessageReadInfo.FillReadInfo
+2017-05-17 08:24:58.870|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	6	2	| | Sky.TextMessages.BusinessLogic.TextMessageReadInfoController.FillReadInfoInternal
+2017-05-17 08:24:58.873|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	4	2	| | Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupsOfGroup
+2017-05-17 08:24:58.874|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	2	| | Sky.TextMessages.DataAccess.SqlTextMessage.GetTextMessageReply
+2017-05-17 08:24:58.874|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	22	1	| Sky.TextMessages.BusinessLogic.TextMessageController.GetDriverAndTruckTextMessagesByIdsInternal
+2017-05-17 08:24:58.878|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	25	0	Sky.TextMessages.BusinessLogic.TextMessageController.GetDriverAndTruckTextMessagesByIds
+2017-05-17 08:24:58.882|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	0	3	| | | Transics.Sky.Line.BusinessLogic.DriverLoginController.GetDriverLoginSessionsByIds
+2017-05-17 08:24:58.885|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	19	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:24:58.885|106|DEBUG|	12febdb1-ed0d-4b30-8391-d24daae0f1c2	19	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:24:58.887|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	3	| | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.GetLastSession
+2017-05-17 08:24:58.891|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	3	3	| | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.GetPreviousCoDriverSessionTruck
+2017-05-17 08:24:58.891|106|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - end
+2017-05-17 08:24:58.891|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	23	4	| | | | Transics.Sky.Line.DataAccess.DeviceheaderModule.SqlDeviceHeaderLocation.GetDeviceHeaderLocations
+2017-05-17 08:24:58.895|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	4	| | | | Transics.Sky.Line.DataAccess.SqlDriverLoginDetail.FillInDetails
+2017-05-17 08:24:58.895|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	3	| | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionData
+2017-05-17 08:24:58.895|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	12	2	| | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionDataTrucks
+2017-05-17 08:24:58.895|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	17	1	| Transics.Sky.Line.DataAccess.SqlDriverLoginSession.Get
+2017-05-17 08:24:58.895|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	0	1	| Transics.Sky.Line.BusinessLogic.DriverLoginController.RemoveSessionsOutSideOfRange
+2017-05-17 08:24:58.895|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	17	0	Transics.Sky.Line.BusinessLogic.DriverLoginController.GetLoginSessions
+2017-05-17 08:24:58.904|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	9	0	Sky.TextMessages.DataAccess.SqlTextMessageWithAddressBooks.FillAddressBookForOneMessage
+2017-05-17 08:24:58.915|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	5	2	| | Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetCurrentUserItemLinksWithoutPeriodByUser
+2017-05-17 08:24:58.915|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	5	1	| Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetCurrentUserItemLinksByUserId
+2017-05-17 08:24:58.921|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	6	2	| | Transics.Sky.Line.DataAccess.SqlGroup.GetNewGroups
+2017-05-17 08:24:58.924|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	44	2	| | Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupItemsBySubgroup
+2017-05-17 08:24:58.925|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	76	1	| Transics.Sky.Line.BusinessLogic.GroupController.GetGroups
+2017-05-17 08:24:58.927|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	6	2	| | Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupsOfGroup
+2017-05-17 08:24:58.928|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	6	4	| | | | Transics.Sky.Line.DataAccess.SqlDriverLookup.LoadDriverPerson
+2017-05-17 08:24:58.928|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	11	3	| | | Transics.Sky.Line.BusinessLogic.DriverController.LoadDriverPerson
+2017-05-17 08:24:58.933|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	4	1	| Transics.Sky.Line.DataAccess.SqlSubGroupRelation.GetTrackedSubgroupIds
+2017-05-17 08:24:58.938|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	115	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetCurrentUserItemRelationsByUserId
+2017-05-17 08:24:58.945|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	5	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserById
+2017-05-17 08:24:58.945|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	5	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserById
+2017-05-17 08:24:58.951|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	5	4	| | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.Dictionarypoints
+2017-05-17 08:24:58.958|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	5	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetCurrentUserItemLinksWithPeriodByUser
+2017-05-17 08:24:58.958|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	10	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetCurrentUserItemLinksByUserId
+2017-05-17 08:24:58.958|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	4	| | | | Transics.Sky.Line.BusinessLogic.Validation.GetTripReportBatchDtoValidator.ValidateInput
+2017-05-17 08:24:58.963|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	4	1	| Transics.Sky.Line.DataAccess.SqlGroup.GetNewGroups
+2017-05-17 08:24:58.965|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	4	5	| | | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.965|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	4	4	| | | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:58.966|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	4	| | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.Dictionarypoints
+2017-05-17 08:24:58.969|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	5	1	| Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupsOfGroup
+2017-05-17 08:24:58.969|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	41	2	| | Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupItemsBySubgroup
+2017-05-17 08:24:58.969|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	54	1	| Transics.Sky.Line.BusinessLogic.GroupController.GetGroups
+2017-05-17 08:24:58.978|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	8	1	| Transics.Sky.Line.DataAccess.SqlSubGroupRelation.GetTrackedSubgroupIds
+2017-05-17 08:24:58.979|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	70	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetCurrentUserItemRelationsByUserId
+2017-05-17 08:24:58.984|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	1	| Transics.Sky.Line.DataAccess.SqlUser.GetUserById
+2017-05-17 08:24:58.984|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	0	Transics.Sky.Line.BusinessLogic.UserModule.UserController.GetUserById
+2017-05-17 08:24:58.989|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetCurrentUserItemLinksWithPeriodByUser
+2017-05-17 08:24:58.989|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	4	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetCurrentUserItemLinksByUserId
+2017-05-17 08:24:58.994|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	5	1	| Transics.Sky.Line.DataAccess.SqlGroup.GetNewGroups
+2017-05-17 08:24:59.001|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	6	1	| Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupsOfGroup
+2017-05-17 08:24:59.035|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	66	1	| Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupItemsBySubgroup
+2017-05-17 08:24:59.035|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	76	0	Transics.Sky.Line.BusinessLogic.GroupController.GetGroups
+2017-05-17 08:24:59.041|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	40	1	| Transics.Sky.Line.DataAccess.SqlGroup.GetNewSubgroupItemsBySubgroup
+2017-05-17 08:24:59.041|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	52	0	Transics.Sky.Line.BusinessLogic.GroupController.GetGroups
+2017-05-17 08:24:59.043|119|DEBUG|	7998e5d5-219f-4eb8-8bd8-dd7acf4e57a7	7	0	Transics.Sky.Line.DataAccess.SqlSubGroupRelation.GetTrackedSubgroupIds
+2017-05-17 08:24:59.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	92	3	| | | Transics.Sky.Line.BusinessLogic.Reports.ReportControllerFactory.Create
+2017-05-17 08:24:59.048|135|DEBUG|	ba177caa-43c4-460f-a2d2-b1fb73c45f2c	6	0	Transics.Sky.Line.DataAccess.SqlSubGroupRelation.GetTrackedSubgroupIds
+2017-05-17 08:24:59.052|119|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - end
+2017-05-17 08:24:59.058|135|DEBUG|http://fleetwebservice.transics.org/FWSMessage_GetTextMessages - end
+2017-05-17 08:24:59.270|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	10	| | | | | | | | | | Transics.Sky.Line.DataAccess.SqlDriverLoginDetail.FillInDetails
+2017-05-17 08:24:59.270|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	9	| | | | | | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionData
+2017-05-17 08:24:59.270|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	9	| | | | | | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.RemoveSessionsOutSideOfRange
+2017-05-17 08:24:59.270|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	8	| | | | | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionDataDrivers
+2017-05-17 08:24:59.270|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	13	7	| | | | | | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.Get
+2017-05-17 08:24:59.270|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	18	6	| | | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.GetLoginSessions
+2017-05-17 08:24:59.270|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	19	5	| | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.GetDriverLoginSessions
+2017-05-17 08:24:59.276|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	28	4	| | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.FillInDriverHistoricalLoginInfos
+2017-05-17 08:24:59.302|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	6	| | | | | | Transics.Sky.Line.DataAccess.DeviceCouplingDao.GetDeviceCouplingSessions
+2017-05-17 08:24:59.321|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	7	| | | | | | | Transics.Sky.Line.DataAccess.SqlDevice.GetDeviceById
+2017-05-17 08:24:59.321|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	13	6	| | | | | | Transics.Sky.Line.BusinessLogic.DevicePropertiesController.FillInDeviceProperties
+2017-05-17 08:24:59.322|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	33	5	| | | | | Transics.Sky.Line.BusinessLogic.DeviceCouplingController.FillInAllCouplingsAndProperties
+2017-05-17 08:24:59.330|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	7	| | | | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.GetDriverLoginSessionsByIds
+2017-05-17 08:24:59.333|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	8	| | | | | | | | Transics.Sky.Line.DataAccess.SqlDriverLoginDetail.FillInDetails
+2017-05-17 08:24:59.333|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	7	| | | | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionData
+2017-05-17 08:24:59.333|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3	6	| | | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionDataTrucks
+2017-05-17 08:24:59.333|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	11	5	| | | | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.Get
+2017-05-17 08:24:59.335|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.CompleteSessionData
+2017-05-17 08:24:59.341|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	6	5	| | | | | Transics.Sky.Line.DataAccess.SqlDriverLoginSession.GetLastSession
+2017-05-17 08:24:59.343|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.RemoveSessionsOutSideOfRange
+2017-05-17 08:24:59.344|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	60	4	| | | | Transics.Sky.Line.BusinessLogic.DriverLoginController.FillInTruckHistoricalLoginInfos
+2017-05-17 08:24:59.384|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	5	| | | | | Transics.Sky.Line.DataAccess.SqlDevice.GetDeviceById
+2017-05-17 08:24:59.384|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	4	| | | | Transics.Sky.Line.BusinessLogic.DeviceController.GetDevicesByIds
+2017-05-17 08:24:59.453|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	5	| | | | | Transics.Sky.Line.DataAccess.DeviceCouplingDao.GetDeviceCouplingSessions
+2017-05-17 08:24:59.453|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	4	| | | | Transics.Sky.Line.BusinessLogic.DeviceCouplingController.GetDeviceCouplingSessions
+2017-05-17 08:24:59.472|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3	5	| | | | | Transics.Sky.Line.DataAccess.Vehicle.SqlVehicle.FillInVehicleInfo
+2017-05-17 08:24:59.473|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.DataAccess.Vehicle.SqlVehicle.FillInVehicleInfo
+2017-05-17 08:24:59.507|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	22	6	| | | | | | Transics.Sky.Line.DataAccess.SqlTachoStatus.GetTachoEvents
+2017-05-17 08:24:59.507|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	29	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoStatusController.GetTachoEvents
+2017-05-17 08:24:59.508|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	51	4	| | | | Transics.Sky.Line.BusinessLogic.Report.Preprocessing.ReportPreprocessorImplTacho.GetTacho
+2017-05-17 08:24:59.559|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	41	6	| | | | | | Transics.Sky.Line.DataAccess.SqlTachoStatus.GetPreviousTachoStatusForTrucks
+2017-05-17 08:24:59.560|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	45	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoStatusController.GetPreviousTachoStatusForTruckForDriverAndCoDriver
+2017-05-17 08:24:59.560|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	47	4	| | | | Transics.Sky.Line.BusinessLogic.Report.Preprocessing.ReportPreprocessorImplTacho.AddPreviousTachos
+2017-05-17 08:24:59.602|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	29	5	| | | | | Transics.Sky.Line.DataAccess.SqlTachoStatus.GetTachoEventsByTruckRanges
+2017-05-17 08:24:59.602|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	33	4	| | | | Transics.Sky.Line.BusinessLogic.TachoStatusController.GetTachoEventsByTruckRanges
+2017-05-17 08:24:59.635|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	4	| | | | Transics.Sky.Line.BusinessLogic.DeviceHeaderModule.DeviceHeaderController.FillInProperties
+2017-05-17 08:24:59.659|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	15	4	| | | | Transics.Sky.Line.BusinessLogic.Reports.CoupleLoginSessionsToReportSynchroController.FillInLogins
+2017-05-17 08:24:59.675|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	4	5	| | | | | Transics.Sky.Line.DataAccess.SqlAction.FillInActionGroupsForCustomer
+2017-05-17 08:24:59.675|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	10	4	| | | | Transics.Sky.Line.BusinessLogic.ActionController.FillInActionGroupsForCustomer
+2017-05-17 08:24:59.686|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	5	| | | | | Transics.Sky.Line.DataAccess.SqlAction.FillInActionInfo
+2017-05-17 08:24:59.686|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	4	| | | | Transics.Sky.Line.BusinessLogic.ActionController.FillInActionInfo
+2017-05-17 08:24:59.711|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	13	4	| | | | Transics.Sky.Line.BusinessLogic.Reports.FillInActionAndTachoEventsController.FillInActionAndTachoEventsUsedByRequest
+2017-05-17 08:24:59.727|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	6	5	| | | | | Transics.Sky.Line.DataAccess.DeviceheaderModule.SqlDeviceheader.FillInProperties
+2017-05-17 08:24:59.728|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	4	| | | | Transics.Sky.Line.BusinessLogic.DeviceHeaderModule.DeviceHeaderController.FillInProperties
+2017-05-17 08:24:59.740|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.Report.ReportProcessorTdsImpl.GetReportData
+2017-05-17 08:24:59.754|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	13	5	| | | | | Transics.Sky.Line.BusinessLogic.Report.ReportProcessorTdsImpl.GetReportData
+2017-05-17 08:24:59.755|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.Report.ReportProcessorTdsImpl.GetReportData
+2017-05-17 08:24:59.766|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3	7	| | | | | | | Transics.Sky.Line.BusinessLogic.Reports.FilterDeviceDataController.RemovePreviousDataWithSameBeginTime
+2017-05-17 08:24:59.772|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	7	| | | | | | | Transics.Sky.Line.BusinessLogic.ActionReport.RemoveDataBetweenLogoutAndLoginController.AddLoginsLogoutsToReportData
+2017-05-17 08:24:59.774|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	7	| | | | | | | Transics.Sky.Line.BusinessLogic.Reports.FilterDeviceDataController.RemoveActivitiesWithoutTruck
+2017-05-17 08:24:59.795|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	7	| | | | | | | Transics.Sky.Line.BusinessLogic.Report.GetPreviousTachoController.GetPreviousTachos
+2017-05-17 08:24:59.799|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	1	7	| | | | | | | Transics.Sky.Line.BusinessLogic.Reports.TachoActivityRegistrationReport.Algorithms.ProcessTachoLoginController.AssignWorkCodeAndNeedsToBeRoundedToLogins
+2017-05-17 08:24:59.814|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	7	| | | | | | | Transics.Sky.Line.BusinessLogic.Reports.ProcessTachoResetController.ProcessResets
+2017-05-17 08:24:59.814|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	55	6	| | | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportTreatController.TreatEvent
+2017-05-17 08:24:59.814|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	57	5	| | | | | Transics.Sky.Line.BusinessLogic.Report.ReportProcessorTachoImpl.GetReportItem
+2017-05-17 08:24:59.817|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.Reports.CoupleLoginSessionsToReportSynchroController.FillInLogins
+2017-05-17 08:24:59.817|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	78	4	| | | | Transics.Sky.Line.BusinessLogic.Report.ReportProcessorTdsImpl.RunProcessImpl
+2017-05-17 08:24:59.820|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	4	| | | | Transics.Sky.Line.BusinessLogic.DeviceHeaderModule.DeviceHeaderController.FillInProperties
+2017-05-17 08:24:59.855|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.DevicePropertiesController.FillInDeviceProperties
+2017-05-17 08:24:59.855|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	1	4	| | | | Transics.Sky.Line.BusinessLogic.DeviceCouplingController.FillInAllCouplingsAndProperties
+2017-05-17 08:24:59.877|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	5	| | | | | Transics.Sky.Line.DataAccess.SqlTrailerTruckConnection.Get
+2017-05-17 08:24:59.884|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3	5	| | | | | Transics.Sky.Line.DataAccess.SqlTrailerTruckConnection.GetTruckConnections
+2017-05-17 08:24:59.885|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	20	4	| | | | Transics.Sky.Line.BusinessLogic.TrailerReport.TrailerReportController.GetTrailerTrailerTruckConnections
+2017-05-17 08:24:59.964|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	50	4	| | | | Transics.Sky.Line.BusinessLogic.Reports.ReportProcessorFilterBatchImpl.RunProcessImpl
+2017-05-17 08:24:59.968|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.Report.Enrichment.ReportProcessorAdaptFirstAndLastRecordBatchImpl.LimitLastActivityTo24Hours
+2017-05-17 08:24:59.968|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	4	| | | | Transics.Sky.Line.BusinessLogic.Report.Enrichment.ReportProcessorAdaptFirstAndLastRecordBatchImpl.RunProcessImpl
+2017-05-17 08:24:59.968|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	922	3	| | | Transics.Sky.Line.BusinessLogic.Reports.ReportController2.Process
+2017-05-17 08:24:59.974|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	4	| | | | Transics.Sky.Line.BusinessLogic.Validation.GetTripReportBatchDtoValidator.ValidateInput
+2017-05-17 08:24:59.981|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	6	| | | | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:24:59.981|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:24:59.981|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	4	| | | | Transics.Sky.Line.BusinessLogic.Reports.ReportControllerFactory.DetermineTachoSynchronizationType
+2017-05-17 08:25:00.033|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.037|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.038|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.039|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.040|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.041|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.041|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.041|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.042|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.043|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.044|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.045|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.045|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.045|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.045|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoReport.TachoReportRoundMinutesController.NeedsToBeRounded
+2017-05-17 08:25:00.069|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	6	| | | | | | Transics.Sky.Line.DataAccess.SqlInstructionset.GetInstructionsetUploads
+2017-05-17 08:25:00.077|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	6	| | | | | | Transics.Sky.Line.BusinessLogic.DevicePropertiesController.FillInDeviceProperties
+2017-05-17 08:25:00.078|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	29	5	| | | | | Transics.Sky.Line.BusinessLogic.TachoActivityRegistrationReport.Enrichment.ReportEnrichmentFillInDeviceProperties.Enrich
+2017-05-17 08:25:00.103|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.Domain.Report.ReportFilter
+2017-05-17 08:25:00.109|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	5	| | | | | Transics.Sky.Line.Domain.Report.ReportFilter
+2017-05-17 08:25:00.123|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	7	6	| | | | | | Transics.Sky.Line.DataAccess.SqlReportSynchroTreated.GetTreatmentInfo
+2017-05-17 08:25:00.123|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	12	5	| | | | | Transics.Sky.Line.BusinessLogic.Reports.TachoActivityRegistrationReport.Algorithms.ReportSynchro.ReportSynchroTreatedController.FillInTreatmentInfo
+2017-05-17 08:25:00.140|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	111	4	| | | | Transics.Sky.Line.BusinessLogic.Reports.Enrichment.ReportController.EnrichmentController.Process
+2017-05-17 08:25:00.140|26|WARN |	27328ee0-cb6e-4d78-9d21-3b6887d321b6	169	3	| | | Transics.Sky.Line.BusinessLogic.Reports.Enrichment.TdsEnrichReportController.EnrichReport
+2017-05-17 08:25:00.799|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	1798	5	| | | | | Transics.Sky.Line.CacheAccess.CachePoiGeometry.TryGet
+2017-05-17 08:25:00.802|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	1810	4	| | | | Transics.Sky.Line.BusinessLogic.PoiController.GetPoiGeometryByCustomerIdGeobound
+2017-05-17 08:25:00.822|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	8	5	| | | | | Transics.Sky.Line.DataAccess.SqlPoi.GetPois
+2017-05-17 08:25:00.822|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	16	4	| | | | Transics.Sky.Line.BusinessLogic.PoiController.GetPois
+2017-05-17 08:25:00.826|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	1965	3	| | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.826|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	1976	2	| | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.826|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	2	| | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.Dictionarypoints
+2017-05-17 08:25:00.834|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	1985	1	| Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.834|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	1990	0	Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.838|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	3	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:25:00.838|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	3	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:25:00.842|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	4	1	| Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:25:00.842|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	4	0	Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:25:00.855|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	1	0	Transics.Sky.Line.DataAccess.DynamicDataModule.SqlDynamicDataDefinition.GetById
+2017-05-17 08:25:00.856|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	0	Transics.Sky.Line.DataAccess.DynamicDataModule.SqlDynamicDataDefinition.GetById
+2017-05-17 08:25:00.903|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	3	2	| | Transics.Sky.Line.DataAccess.ObcFile.SqlFileFromObc.GetFilesFromObcs
+2017-05-17 08:25:00.905|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	2	| | Transics.Sky.Line.BusinessLogic.ObcFiles.ObcFilesController.FillInAdditionalProperties
+2017-05-17 08:25:00.905|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	11	1	| Transics.Sky.Line.BusinessLogic.ObcFiles.ObcFilesController.GetFilesFromObc
+2017-05-17 08:25:00.907|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	5	| | | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.Dictionarypoints
+2017-05-17 08:25:00.907|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	4	| | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.907|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	3	| | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.907|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	3	| | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.Dictionarypoints
+2017-05-17 08:25:00.907|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	2	| | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.908|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	0	1	| Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:00.916|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	8	2	| | Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:25:00.916|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	8	1	| Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:25:00.918|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	2	2	| | Transics.Sky.Line.DataAccess.SqlUserItemRelation.GetHistoricalUserItemLinksWithPeriodByUser
+2017-05-17 08:25:00.919|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	2	1	| Transics.Sky.Line.BusinessLogic.UserModule.UserItemRelationController.GetHistoricalUserItemRelationsWithPeriodByUserId
+2017-05-17 08:25:00.929|35|DEBUG|	fac8af75-b949-4420-b364-e201f234b248	42	0	Transics.Sky.Facade.Fws.FacadeController.ObcFileFacadeController.GetFilesFromObc
+2017-05-17 08:25:00.967|35|DEBUG|http://fleetwebservice.transics.org/FWSDocuments_GetDocuments - end
+2017-05-17 08:25:00.997|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	4	| | | | Transics.Sky.Line.BusinessLogic.OldFleet.RegistrationController.GetValidRegistrations
+2017-05-17 08:25:00.998|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	838	3	| | | Transics.Sky.Line.BusinessLogic.OldFleet.RegistrationController.GetTachoActiveRegistrations
+2017-05-17 08:25:01.105|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	1	4	| | | | Transics.Sky.Line.DataAccess.SqlActivityReadEdited.GetAllActivityReadEditedByDriverAndPeriod
+2017-05-17 08:25:01.105|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	3	| | | Transics.Sky.Line.BusinessLogic.ActivityReadEditedController.GetAllActivityReadEditedByDriverAndPeriod
+2017-05-17 08:25:01.122|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	4	| | | | Transics.Sky.Line.DataAccess.SqlDriver.FillInDriverSocialInfo
+2017-05-17 08:25:01.123|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	3	| | | Transics.Sky.Line.BusinessLogic.DriverController.FillInDriverSocialInfo
+2017-05-17 08:25:01.147|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	16	4	| | | | Transics.Sky.Line.DataAccess.SqlDriver.FillInDriverRegulationInfos
+2017-05-17 08:25:01.148|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	23	3	| | | Transics.Sky.Line.BusinessLogic.DriverController.FillInDriverRegulationInfos
+2017-05-17 08:25:01.159|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	4	| | | | Transics.Sky.Line.DataAccess.SqlDriverInfo.LoadDriverExtraInfo
+2017-05-17 08:25:01.159|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	3	| | | Transics.Sky.Line.BusinessLogic.DriverController.LoadDriverExtraInfo
+2017-05-17 08:25:01.169|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	1	4	| | | | Transics.Sky.Line.DataAccess.SqlDriverMigration.FillInDriverMigration
+2017-05-17 08:25:01.169|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	5	3	| | | Transics.Sky.Line.BusinessLogic.DriverController.LoadDriverMigration
+2017-05-17 08:25:01.174|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3	4	| | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:25:01.174|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3	3	| | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:25:01.651|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2889	2	| | Transics.Sky.Facade.ServiceTimes.FacadeController.ServiceTimesController.CalculateAmplitudeViewer
+2017-05-17 08:25:01.652|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2998	1	| Transics.Sky.Facade.Fws.FacadeController.FWSRegistrationsFacadeController.GetAmplitudeTable
+2017-05-17 08:25:01.700|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	2	| | Transics.Sky.Line.Domain.Report.ReportFilter
+2017-05-17 08:25:01.703|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	2	| | Transics.Sky.Line.BusinessLogic.UserModule.UserController.FillInUsers
+2017-05-17 08:25:01.706|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	2	| | Transics.Sky.Line.DataAccess.SqlLanguage.GetById
+2017-05-17 08:25:01.710|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	7	| | | | | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:25:01.710|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	6	| | | | | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:25:01.742|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	31	6	| | | | | | Transics.Sky.Line.DataAccess.DeviceheaderModule.SqlDeviceHeaderLocation.GetDeviceHeaderLocations
+2017-05-17 08:25:01.751|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	7	| | | | | | | Transics.Sky.Line.DataAccess.SqlGenericCustomerSettings.FillInGenericCustomerSettingForCustomer
+2017-05-17 08:25:01.751|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	2	6	| | | | | | Transics.Sky.Line.BusinessLogic.CustomerGenericSettingModule.GenericCustomerSettingsController.FillInRequestedGenericCustomerSettingForCustomer
+2017-05-17 08:25:01.752|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	6	| | | | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.Dictionarypoints
+2017-05-17 08:25:01.753|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	7	| | | | | | | Transics.Sky.Line.CacheAccess.CachePoiGeometry.TryGet
+2017-05-17 08:25:01.753|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	6	| | | | | | Transics.Sky.Line.BusinessLogic.PoiController.GetPoiGeometryByCustomerIdGeobound
+2017-05-17 08:25:01.761|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	7	| | | | | | | Transics.Sky.Line.DataAccess.SqlPoi.GetPois
+2017-05-17 08:25:01.761|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	8	6	| | | | | | Transics.Sky.Line.BusinessLogic.PoiController.GetPois
+2017-05-17 08:25:01.762|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	54	5	| | | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:01.762|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	54	4	| | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:01.762|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	4	| | | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.Dictionarypoints
+2017-05-17 08:25:01.762|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	54	3	| | | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:01.762|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	54	2	| | Transics.Sky.Line.BusinessLogic.ReverseGeocodingController.GetReverseGeocoding
+2017-05-17 08:25:01.781|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	123	1	| Transics.Sky.Facade.Infrastructure.FacadeControllers.RegistrationsFacadeController.GetRegistrations
+2017-05-17 08:25:01.863|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3	3	| | | Transics.Sky.Line.DataAccess.SqlRemark.GetRemarks
+2017-05-17 08:25:01.863|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	0	3	| | | Transics.Sky.Line.BusinessLogic.UserModule.UserController.FillInUsers
+2017-05-17 08:25:01.863|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	9	2	| | Transics.Sky.Line.BusinessLogic.RemarkController.GetRemarks
+2017-05-17 08:25:01.870|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	27	1	| Transics.Sky.Facade.Fws.FacadeController.FWSRegistrationsFacadeController.GetRemarksTable
+2017-05-17 08:25:01.871|26|DEBUG|	27328ee0-cb6e-4d78-9d21-3b6887d321b6	3234	0	Transics.Sky.Facade.Fws.FacadeController.FWSRegistrationsFacadeController.GetRegistrations
+2017-05-17 08:25:01.875|26|DEBUG|http://fleetwebservice.transics.org/FWSRegistrations_GetAllRegistrations - end
+2017-05-17 08:25:03.169|25|DEBUG|		0	0	Transics.Sky.Line.BusinessLogic.GpsDllController.Dispose
+2017-05-17 08:25:03.443|116|DEBUG|		0	1	| Transics.Sky.Line.ServiceAccess.Scheduler.JobSchedulerController.InstantiateScheduler
+2017-05-17 08:25:03.498|116|DEBUG|		55	0	Transics.Sky.Line.ServiceAccess.Scheduler.JobSchedulerController.ShutDownScheduler
