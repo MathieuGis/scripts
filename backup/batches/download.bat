@@ -8,7 +8,7 @@ pause
 
 ECHO open dsinferno.synology.me> temp.txt
 ECHO mathieu>> temp.txt
-ECHO Inferno1991>> temp.txt
+ECHO REPLACE_WITH_SYNOLOGY_PASSWORD>> temp.txt
 ECHO binary>> temp.txt
 ECHO lcd C:\Users\mathieug\Documents>> temp.txt
 ECHO cd /home/CloudStation>> temp.txt
