@@ -1,4 +1,4 @@
-<#$myWindowsID=[System.Security.Principal.WindowsIdentity]::GetCurrent()
+﻿<#$myWindowsID=[System.Security.Principal.WindowsIdentity]::GetCurrent()
 $myWindowsPrincipal=new-object System.Security.Principal.WindowsPrincipal($myWindowsID)
  $adminRole=[System.Security.Principal.WindowsBuiltInRole]::Administrator
 
