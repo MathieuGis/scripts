@@ -24,3 +24,6 @@ jobs:
       - name: Parse active scripts with Windows PowerShell
         shell: powershell
         run: ./tests/Test-PowerShellSyntax.ps1
+      - name: Test in-memory launcher with harmless fixtures
+        shell: powershell
+        run: ./tests/Test-Toolkit.ps1
