@@ -2,6 +2,24 @@
 
 Administration utilities and historical deployment projects, organized by platform and purpose.
 
+## Run the GitHub menu without saving script files
+
+Open **Windows PowerShell 5.1** or **PowerShell 7** in a normal console. For tools that require elevation, open the console **as Administrator** first. Paste:
+
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod 'https://raw.githubusercontent.com/MathieuGis/scripts/master/Start-Toolkit.ps1')))
+```
+
+The [launcher](Start-Toolkit.ps1) discovers active PowerShell scripts under `powershell/` and `projects/`, with filtering, refresh, source preview and an explicit RUN confirmation. Each selection is fetched by its Git blob ID and its content is checked against that ID. Refresh to load newly added scripts; no menu edits are needed. The initial launcher command follows the current `master`, so review and trust that repository before running it. Windows must permit internet access and PowerShell execution; managed device policies still apply.
+
+The launcher writes **no script, cache or log files**. A local named pipe transfers the selected script and parameters to a separate PowerShell process in memory. Interactive prompts remain available, and a script's `exit` does not close the menu. Normal Windows/PowerShell/security logging and paging can still leave operating-system records; this is not a promise of zero disk traces. This does not bypass security policies or disable logging.
+
+**Selected scripts retain their original behavior:** copying files, creating reports/logs, installing software or making system changes can write to disk. Scripts that reference their own file location or companion files are blocked in this mode; the help-site deployment tools require a checkout. The menu is intended for standalone console scripts, not ISE or scripts requiring an STA GUI host. Ctrl+C can interrupt both the running tool and the menu; paste the command again if needed.
+
+For scripts declaring parameters, optionally enter a JSON object. For example, `{"Execute":true}` passes a switch; `{"SourcePath":"C:\\Input","DestinationPath":"D:\\Backup"}` passes paths. Blank input uses defaults or the script's own mandatory-parameter prompts. Parameter values are passed as data, not evaluated as PowerShell commands.
+
+GitHub's public API rate limits apply. If listing or downloading fails, the menu reports the error rather than running a partially downloaded script.
+
 | Directory | Contents |
 | --- | --- |
 | [powershell/diagnostics](powershell/diagnostics/) | Windows system, event and network reports |
