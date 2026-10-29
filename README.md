@@ -16,6 +16,8 @@ Administration utilities and historical deployment projects, organized by platfo
 | [tests](tests/) | Non-destructive structure and syntax checks |
 | [backup](backup/) | Frozen snapshot of the original 56 files |
 
+See the [Notion synchronization](docs/notion-sync.md) for imported scripts, source links and behavior changes.
+
 Start with the [script catalogue](docs/script-catalogue.md) for purposes, prerequisites, parameters and example commands. See the [path migration](docs/path-migration.md) when updating existing shortcuts or scheduled tasks.
 
 ## Quick examples
