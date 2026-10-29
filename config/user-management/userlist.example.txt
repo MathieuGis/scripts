@@ -1,0 +1,2 @@
+# Existing format: username:password-hash
+example-user:REPLACE_WITH_EXISTING_PASSWORD_HASH

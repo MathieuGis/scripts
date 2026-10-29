@@ -1,0 +1,3 @@
+# One server hostname or IP address per line
+server01.example.invalid
+server02.example.invalid
