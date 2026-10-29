@@ -1,0 +1,17 @@
+# Generated output and machine-local configuration
+/runtime/
+/config/*.local.json
+/config/*.local.psd1
+/config/user-management/*.local.txt
+/powershell/**/logs/
+/bash/**/logs/
+/batch/temp.txt
+/batch/*.reg
+/batch/*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
