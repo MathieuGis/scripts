@@ -1,0 +1,80 @@
+var custid = 1485
+
+for (i = 200; i > 0; i--) {
+    var dateOffset = (24*60*60*1000) * i; // keep 63 days
+    var d = new Date();
+    //print("original date:" + d)
+    d.setTime(d.getTime() - dateOffset);
+    //print ( "date:" + d)
+    var y = String(d.getFullYear())
+    //print("jaartal:" +  y)
+
+    if (d.getMonth()+1 < 10)
+            {
+                    var m = "0" + String(d.getMonth()+1)
+        }
+    else
+        {
+                var m = String(d.getMonth()+1)
+            }
+    //print("maand:" + m)
+    //print("date2:" +d)
+    if (d.getDate()< 10)
+            {
+                    var dy = "0" + String(d.getDate())
+        }
+    else
+        {
+                var dy = String(d.getDate())
+            }
+    //print("dag:" + dy)
+    if (d.getHours() < 10)
+            {
+                    var h = "0" + String(d.getHours())
+            }
+    else
+            {
+                    var h = String(d.getHours())
+            }
+    //print("uur:" + h)
+    var full = (y+m+dy)
+    var deldate = Number(full)
+    
+
+        var delarrayObc = db.getCollection('NewObcRegistrations').aggregate([
+                                                    {$match:{cust:custid,date:deldate}},
+                                                    {$unwind:"$acts"},
+                                                    {$group:{"_id":{"_id":"$_id","tnr":"$acts.tnr"},count:{"$sum":1}}},
+                                                    {$match:{count:{"$gt":1}}},
+                                                    /*{$limit :1}*/
+                                                    /*{$count: "_id"}*/
+                                                    ]).toArray()
+                        
+
+                delarrayObc.forEach(function(doc){
+                                                /*db.ChangedReports.deleteMany({cst:(cstarray[i]),dt:{$gte:ISODate("2011-01-01T00:00:00.000Z"),$lte:new Date(ISODate().getTime() - 1000 * 3600 * 24 *63 )}});*/
+                                                  // for (var i in doc._id) {
+                                                    //           print(doc._id._id,doc._id.tnr)
+                                                   //}
+                                                db.getCollection('NewObcRegistrations').update({ "_id" :doc._id._id },{$pull:{acts:{tnr:doc._id.tnr}}})
+                });
+
+        var delarrayTacho = db.getCollection('NewTachoRegistrations').aggregate([
+                                                    {$match:{cust:custid,date:deldate}},
+                                                    {$unwind:"$acts"},
+                                                    {$group:{"_id":{"_id":"$_id","tnr":"$acts.tnr"},count:{"$sum":1}}},
+                                                    {$match:{count:{"$gt":1}}},
+                                                    /*{$limit :1}*/
+                                                    /*{$count: "_id"}*/
+                                                     ]).toArray()
+
+                delarrayTacho.forEach(function(doc){
+                                                        /*db.ChangedReports.deleteMany({cst:(cstarray[i]),dt:{$gte:ISODate("2011-01-01T00:00:00.000Z"),$lte:new Date(ISODate().getTime() - 1000 * 3600 * 24 *63 )}});*/
+                                                          // for (var i in doc._id) {
+                                                          //             print(doc._id._id,doc._id.tnr)
+                                                           //}
+                                                db.getCollection('NewTachoRegistrations').update({ "_id" :doc._id._id },{$pull:{acts:{tnr:doc._id.tnr}}})
+                        });
+
+
+}

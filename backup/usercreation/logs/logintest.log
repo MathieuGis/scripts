@@ -1,0 +1,620 @@
+
+==================================================================
+
+10.230.2.102
+
+Matching Defaults entries for mathieu on tr0idub5sv178.transicssun.dbn:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv178.transicssun.dbn:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.2.103
+
+Matching Defaults entries for mathieu on tr0idub5sv179.transicssun.dbn:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv179.transicssun.dbn:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.2.104
+
+Matching Defaults entries for mathieu on tr0idub5sv180.transicssun.dbn:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv180.transicssun.dbn:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.116
+
+Matching Defaults entries for mathieu on tr0idub5sv184:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv184:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.117
+
+Matching Defaults entries for mathieu on tr0idub5sv185:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv185:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.118
+
+Matching Defaults entries for mathieu on tr0idub5sv186:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv186:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.2.71
+
+Matching Defaults entries for mathieu on tr0idub6sv245:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub6sv245:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.2.72
+
+Matching Defaults entries for mathieu on tr0idub6sv246:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub6sv246:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.2.73
+
+Matching Defaults entries for mathieu on tr0idub6sv247:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub6sv247:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.2.105
+
+Matching Defaults entries for mathieu on tr0idub5sv181:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv181:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.2.106
+
+Matching Defaults entries for mathieu on tr0idub5sv182:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv182:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.2.107
+
+Matching Defaults entries for mathieu on tr0idub5sv183:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub5sv183:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.120
+
+Matching Defaults entries for mathieu on tralsvr097:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr097:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.3.200
+
+Matching Defaults entries for mathieu on TRALSVR056:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on TRALSVR056:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.5.15
+
+Matching Defaults entries for mathieu on tralsvr128:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr128:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.118
+
+Matching Defaults entries for mathieu on TRALSVR133:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on TRALSVR133:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.119
+
+Matching Defaults entries for mathieu on TRALSVR134:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on TRALSVR134:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.122
+
+Matching Defaults entries for mathieu on TRALSVR135:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on TRALSVR135:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.8.112
+
+Matching Defaults entries for mathieu on TRALSVR234:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on TRALSVR234:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.8.113
+
+Matching Defaults entries for mathieu on TRALSVR235:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on TRALSVR235:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.8.116
+
+Matching Defaults entries for mathieu on tralsvr237:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr237:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.112
+
+Matching Defaults entries for mathieu on TRALSVR082:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on TRALSVR082:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.24
+
+Matching Defaults entries for mathieu on tralsvr109:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr109:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.25
+
+Matching Defaults entries for mathieu on tralsvr110:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr110:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.26
+
+Matching Defaults entries for mathieu on tralsvr111:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr111:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.123
+
+Matching Defaults entries for mathieu on tralsvr137:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr137:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.124
+
+Matching Defaults entries for mathieu on tralsvr138:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr138:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.125
+
+Matching Defaults entries for mathieu on tralsvr139:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr139:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.126
+
+Matching Defaults entries for mathieu on tralsvr140:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr140:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.127
+
+Matching Defaults entries for mathieu on tralsvr141:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr141:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.128
+
+Matching Defaults entries for mathieu on tralsvr142:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr142:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.121
+
+Matching Defaults entries for mathieu on tralsvr098:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tralsvr098:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.108
+
+Matching Defaults entries for mathieu on tralsvr151:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr151:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.109
+
+Matching Defaults entries for mathieu on tralsvr152:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr152:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.110
+
+Matching Defaults entries for mathieu on tralsvr153:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr153:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.111
+
+Matching Defaults entries for mathieu on tralsvr154:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr154:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.112
+
+Matching Defaults entries for mathieu on tralsvr155:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr155:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.4.113
+
+Matching Defaults entries for mathieu on tralsvr156:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on tralsvr156:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.4.32
+
+Matching Defaults entries for mathieu on tr0idub6sv242:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub6sv242:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.4.33
+
+Matching Defaults entries for mathieu on tr0idub6sv243:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub6sv243:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.4.34
+
+Matching Defaults entries for mathieu on tr0idub6sv244:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mathieu may run the following commands on tr0idub6sv244:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.21
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.22
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.23
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.8.20
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.2.74
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.2.75
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.27
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.28
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.8.29
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.3.20
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.3.21
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.231.3.20
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.3.27
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
+==================================================================
+
+10.230.3.28
+
+Matching Defaults entries for mathieu on this host:
+    env_reset,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User mathieu may run the following commands on this host:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+
