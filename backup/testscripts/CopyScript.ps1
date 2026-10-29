@@ -1,4 +1,4 @@
-# used to copy all docscan"briel" on verizon
+﻿# used to copy all docscan"briel" on verizon
 
 $Path = "\\fileserver_01\d$"
 $Destination = "H:\fileserver\D"
